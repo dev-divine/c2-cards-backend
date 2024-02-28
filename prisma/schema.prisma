@@ -1,0 +1,160 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Roles {
+  DASHBOARD
+  CLIENTE_EC
+  OPT_IN
+  RECEBIVEIS
+  URS
+  ANTECIPACOES
+  USUARIOS
+  NOTA_COMERCIAL
+  SIMULACAO
+  ASSINATURAS
+}
+
+model User {
+  id                 String @id @default(uuid())
+  sports_facility_id String
+  name               String
+  email              String @unique
+  document           String @unique
+  phone              String @unique
+  password           String
+  position           String
+  job                String
+  role               Roles  @default(CLIENTE_EC)
+
+  created_at DateTime  @default(now())
+  updated_at DateTime  @updatedAt
+  deleted_at DateTime?
+
+  ecClients ECClient[]
+
+  @@map("users")
+}
+
+model ECClient {
+  id                   String  @id @default(uuid())
+  user_id              String?
+  company_name         String  @unique
+  company_document     String  @unique
+  company_email        String  @unique
+  company_phone        String  @unique
+  company_zip_code     String
+  company_state        String
+  company_city         String
+  company_street       String
+  company_number       String
+  company_complement   String?
+  responsible_name     String
+  responsible_document String  @unique
+  responsible_email    String  @unique
+  responsible_whatsapp String  @unique
+  zip_code             String
+  state                String
+  city                 String
+  street               String
+  number               String
+  complement           String?
+  profile              String? @default("Cliente E.C.")
+
+  created_at DateTime  @default(now())
+  updated_at DateTime  @updatedAt
+  deleted_at DateTime?
+
+  user User? @relation(fields: [user_id], references: [id])
+
+  @@map("ec_clients")
+}
+
+model OptIn {
+  id                       String    @id @default(uuid())
+  external_code            String    @unique
+  ec_client_name           String
+  ec_client_document       String
+  c2cards_document         String    @unique @default("47440351000187")
+  financial_agent_document String
+  responsible_name         String
+  responsible_document     String
+  responsible_email        String
+  responsible_whatsapp     String
+  signature_date           DateTime  @default(now())
+  activation_date          DateTime  @default(now())
+  expiration_date          DateTime?
+  protocol                 String
+  created_at               DateTime  @default(now())
+  updated_at               DateTime  @updatedAt
+  deleted_at               DateTime?
+
+  @@map("opt_in")
+}
+
+model OptOut {
+  id                   String    @id @default(uuid())
+  ec_client_name       String
+  ec_client_document   String
+  external_code        String?   @unique
+  c2cards_document     String    @unique @default("47440351000187")
+  responsible_name     String
+  responsible_document String
+  responsible_email    String
+  responsible_whatsapp String
+  protocol             String
+  processing_protocol  String?
+  processing_date_time DateTime?
+  created_at           DateTime  @default(now())
+  updated_at           DateTime  @updatedAt
+  deleted_at           DateTime?
+
+  @@map("opt_out")
+}
+
+model OnlineSchedule {
+  id                                    String    @id @default(uuid())
+  start_date                            DateTime
+  end_date                              DateTime
+  partial_schedule_acceptance_indicator String    @default("Sim")
+  schedule_protocol                     String?
+  processing_protocol                   String?
+  request_status                        String?
+  processing_date_time                  DateTime?
+  created_at                            DateTime  @default(now())
+  updated_at                            DateTime  @updatedAt
+  deleted_at                            DateTime?
+
+  @@map("online_schedule")
+}
+
+// incluir agenda recebida em um array (novo model)
+
+// model agenda batch
+
+model Contract {
+  id                             String    @id @default(uuid())
+  external_code                  String    @unique
+  ec_client_document             String
+  renegotiation                  Int       @default(0)
+  c2cards_document               String    @unique @default("47440351000187")
+  contract_effect_type           Int       @default(1)
+  outstanding_balance            Float
+  guaranteed_operation_limit     Float
+  minimum_value_to_be_maintained Float
+  signature_date                 DateTime  @default(now())
+  expiration_date                DateTime
+  division_rule                  Int       @default(2)
+  processing_protocol            String?
+  processing_date_time           DateTime?
+  created_at                     DateTime  @default(now())
+  updated_at                     DateTime  @updatedAt
+  deleted_at                     DateTime?
+
+  @@map("contract")
+}

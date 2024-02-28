@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "es2020",
+
+    /* Modules */
+    "module": "commonjs",
+    "baseUrl": "./",
+    "paths": {
+      "@config/*": ["./src/config/*"],
+      "@core/*": ["./src/core/*"],
+      "@modules/*": ["./src/modules/*"],
+      "@infra/*": ["./src/infra/*"],
+    },
+    "types": [
+      "vitest/globals"
+    ],
+    "resolveJsonModule": true,
+
+    /* Interop Constraints */
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Type Checking */
+    "strict": true,
+    
+    /* Completeness */
+    "skipLibCheck": true
+  }
+}

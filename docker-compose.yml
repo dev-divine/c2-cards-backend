@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  database-pg:
+    image: bitnami/postgresql
+    ports:
+      - 5433:5432
+    environment:
+      - POSTGRESQL_USERNAME=postgres
+      - POSTGRESQL_PASSWORD=docker
+      - POSTGRESQL_DATABASE=c2cards
