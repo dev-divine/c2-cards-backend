@@ -1,6 +1,9 @@
 import { OptOut } from '@modules/opts/entities/opt-out'
 import { OptOutRepository } from '@modules/opts/repositories/opt-out-repository'
 
+import { env } from '@infra/env'
+import { RegisteringEntities } from '@infra/providers/registering-entities/registering-entities'
+
 interface Input {
   companyName: string
   companyDocument: string
@@ -17,7 +20,10 @@ interface Output {
 }
 
 export class CreateOptOutUseCase {
-  constructor(private readonly optOutRepository: OptOutRepository) {}
+  constructor(
+    private readonly optOutRepository: OptOutRepository,
+    private readonly registeringEntities: RegisteringEntities,
+  ) {}
 
   async execute({
     companyName,
@@ -29,15 +35,25 @@ export class CreateOptOutUseCase {
     externalCode,
     b3Protocol,
   }: Input): Promise<Output> {
+    const response = await this.registeringEntities.registerOptOut({
+      externalCode,
+      protocol: b3Protocol,
+    })
+
+    if (!response) {
+      throw new Error('Error on registering opt-out')
+    }
+
     const optOutEntity = OptOut.create({
+      externalCode: response.externalCode,
       ecClientName: companyName,
       ecClientDocument: companyDocument,
+      c2cardsDocument: env.C2_CARDS_DOCUMENT,
       responsibleName,
       responsibleEmail,
       responsibleWhatsapp: responsiblePhone,
       responsibleDocument,
-      externalCode,
-      protocol: b3Protocol,
+      protocol: response.protocol,
     })
 
     await this.optOutRepository.createOptOut(optOutEntity)

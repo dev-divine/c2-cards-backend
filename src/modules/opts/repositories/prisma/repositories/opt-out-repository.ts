@@ -1,10 +1,11 @@
 import { PrismaClient } from '@prisma/client'
 
-import { prisma } from '@infra/database/prisma'
-import { OptOutRepository } from '@modules/opts/repositories/opt-out-repository'
 import { FilterDTO } from '@modules/opts/dtos/filter-dto'
 import { OptOut } from '@modules/opts/entities/opt-out'
-import { PrismaOptOutMapper } from '../mappers/prisma-opt-out-mapper'
+import { OptOutRepository } from '@modules/opts/repositories/opt-out-repository'
+import { PrismaOptOutMapper } from '@modules/opts/repositories/prisma/mappers/prisma-opt-out-mapper'
+
+import { prisma } from '@infra/database/prisma'
 
 export class PrismaOptOutRepository implements OptOutRepository {
   private repository: PrismaClient

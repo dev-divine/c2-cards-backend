@@ -6,6 +6,4 @@ export interface OptOutInputDTO {
 export interface OptOutOutputDTO {
   externalCode: string
   protocol: string
-  processingProtocol: string
-  processingDateTime: Date
 }

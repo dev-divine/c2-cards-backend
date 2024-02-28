@@ -15,7 +15,7 @@ interface Props {
   signatureDate: string
   activationDate: string
   expirationDate?: string
-  protocol?: string
+  protocol: string
   createdAt: Date
   updatedAt?: Date
   deletedAt?: Date

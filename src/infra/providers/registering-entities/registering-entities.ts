@@ -49,7 +49,7 @@ import {
 export interface RegisteringEntities {
   request: Axios
   // OPT-IN / OPT-OUT
-  registerOptIn(params: OptInInputDTO): Promise<OptInOutputDTO>
+  registerOptIn(params: OptInInputDTO): Promise<OptInOutputDTO | undefined>
   registerOptOut(params: OptOutInputDTO): Promise<OptOutOutputDTO | undefined>
   // CONTRACT
   showContract(externalCode: string): Promise<ShowContractOutPutDTO | undefined>

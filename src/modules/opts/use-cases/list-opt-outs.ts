@@ -9,24 +9,20 @@ interface Input {
 
 interface Output {
   optOuts: OptOut[] | undefined
-  totalPages: number
 }
 
 export class ListOptOutsUseCase {
   constructor(private readonly optOutRepository: OptOutRepository) {}
 
   async execute({ page, perPage, id }: Input): Promise<Output> {
-    const optOuts = await this.eCClientRepository.findMany({
+    const optOuts = await this.optOutRepository.listOptOuts({
       page,
       perPage,
       id,
     })
 
-    const totalPages = await this.eCClientRepository.getTotalPages(perPage)
-
     return {
       optOuts,
-      totalPages,
     }
   }
 }

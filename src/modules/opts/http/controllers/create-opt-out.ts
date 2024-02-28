@@ -53,5 +53,5 @@ export async function createOptOut(
     b3Protocol,
   })
 
-  return reply.status(204).send()
+  return reply.status(201).send()
 }

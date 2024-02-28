@@ -37,13 +37,18 @@ export class CreateOptInUseCase {
     activationDate,
     expirationDate,
   }: Input): Promise<Output> {
-    const { externalCode, protocol } =
-      await this.registeringEntities.registerOptIn({
-        financialAgentDocument,
-        ecClientDocument: companyDocument,
-        signatureDate,
-        expirationDate,
-      })
+    const response = await this.registeringEntities.registerOptIn({
+      financialAgentDocument,
+      ecClientDocument: companyDocument,
+      signatureDate,
+      expirationDate,
+    })
+
+    if (!response) {
+      throw new Error('Error on registering opt-in')
+    }
+
+    const { externalCode, protocol } = response
 
     const optInEntity = OptIn.create({
       externalCode,

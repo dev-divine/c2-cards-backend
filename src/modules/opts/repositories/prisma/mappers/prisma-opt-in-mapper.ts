@@ -1,9 +1,9 @@
 import { OptIn as RawOptIn } from '@prisma/client'
 
 import { UniqueEntityID } from '@core/domain/entities/unique-entity-id'
+import { Format } from '@core/utils/format'
 
 import { OptIn } from '@modules/opts/entities/opt-in'
-import { Format } from '@core/utils/format'
 
 export class PrismaOptInMapper {
   static toPrisma(optIn: OptIn) {
