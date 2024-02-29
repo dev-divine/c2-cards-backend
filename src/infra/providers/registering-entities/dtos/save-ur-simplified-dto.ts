@@ -1,14 +1,15 @@
 export interface SaveURSimplifiedInputDTO {
   externalCode: string
   externalContractCode: string
+  contractIdentifier: string
   actionType: string
   coveredReceivables: {
-    accreditorCNPJ: string
+    accreditorCnpj: string
     finalRecipientUserDocument: string
     paymentArrangementCode: string
     settlementDate: string
     amountToEncumber: number
-  }
+  }[]
 }
 
 export interface SaveURSimplifiedOutputDTO {

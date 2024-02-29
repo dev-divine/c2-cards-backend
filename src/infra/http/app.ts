@@ -7,6 +7,7 @@ import { ZodError } from 'zod'
 import { ECClientRoutes } from '@modules/ec-client/http/routes'
 import { OptRoutes } from '@modules/opt/http/routes'
 import { ContractRoutes } from '@modules/contract/http/routes'
+import { URRoutes } from '@modules/ur/http/routes'
 
 import { env } from '@infra/env'
 
@@ -30,6 +31,7 @@ app.register(fastifyCookie)
 app.register(ECClientRoutes)
 app.register(OptRoutes)
 app.register(ContractRoutes)
+app.register(URRoutes)
 
 app.setErrorHandler((error, _, reply) => {
   if (error instanceof ZodError) {

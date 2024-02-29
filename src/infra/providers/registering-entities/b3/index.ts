@@ -31,10 +31,10 @@ import {
   SaveContractInputDTO,
   SaveContractOutputDTO,
 } from '@infra/providers/registering-entities/dtos/save-contract-dto'
-import {
-  SaveURDetailedInputDTO,
-  SaveURDetailedOutputDTO,
-} from '@infra/providers/registering-entities/dtos/save-ur-detailed-dto'
+// import {
+//   SaveURDetailedInputDTO,
+//   SaveURDetailedOutputDTO,
+// } from '@infra/providers/registering-entities/dtos/save-ur-detailed-dto'
 import {
   SaveURDomicileInputDTO,
   SaveURDomicileOutputDTO,
@@ -47,10 +47,10 @@ import {
   ShowContractInputDTO,
   ShowContractOutputDTO,
 } from '@infra/providers/registering-entities/dtos/show-contract-dto'
-import {
-  ShowURInputDTO,
-  ShowUROutputDTO,
-} from '@infra/providers/registering-entities/dtos/show-ur-dto'
+// import {
+//   ShowURInputDTO,
+//   ShowUROutputDTO,
+// } from '@infra/providers/registering-entities/dtos/show-ur-dto'
 import { RegisteringEntities } from '@infra/providers/registering-entities/registering-entities'
 
 export class B3 implements RegisteringEntities {
@@ -221,48 +221,48 @@ export class B3 implements RegisteringEntities {
     }
   }
 
-  async showUR(params: ShowURInputDTO): Promise<ShowUROutputDTO | undefined> {
-    try {
-      const { data, status } = await this.request.get(
-        `/v2/definicao-unidades-recebiveis-detalhada/${params.externalContractCode}/${params.contractIdentifier}/${params.externalCode}`,
-      )
+  // async showUR(params: ShowURInputDTO): Promise<ShowUROutputDTO | undefined> {
+  //   try {
+  //     const { data, status } = await this.request.get(
+  //       `/v2/definicao-unidades-recebiveis-detalhada/${params.externalContractCode}/${params.contractIdentifier}/${params.externalCode}`,
+  //     )
 
-      return {
-        success: status === 200,
-        externalCode: data.codigoExterno,
-        externalContractCode: data.codigoExternoContrato,
-        contractIdentifier: data.identificadorContrato,
-        receivablesUnitsDefinition: {
-          holderDocument: data.documentoTitular, // Agente financeiro - tipo efeito contrato troca de titularidade && Estabelecimento comercial - tipo efeito contrato - cessão fiduciária *IMPORTANTE - APENAS EM UR*
-          divisionRule: data.regraDivisao,
-          definitionStatus: data.situacaoDefinicao,
-          commitmentStatus: data.situacaoComprometimento,
-          coveredReceivables: [
-            // Fazer um map para fazer o transform de cada item
-            {
-              registrarCNPJ: data.cnpjRegistradora,
-              accreditorCNPJ: data.cnpjCredenciadora,
-              contractEffectIdentifier: data.identificadorEfeitoContrato,
-              finalRecipientUserDocument: data.documentoUsuarioFinalRecebedor, // EC
-              paymentArrangementCode: data.codigoArranjoPagamento,
-              constitutionStatus: data.situacaoConstituicao,
-              settlementDate: data.dataLiquidacao,
-              requestedEffectValue: data.valorEfeitoSolicitado,
-              committedEffectValue: data.valorEfeitoComprometido,
-              queueValue: data.valorFila,
-              commitmentOrder: data.ordemComprometimento,
-              totalConstitutedValue: data.valorConstituidoTotal,
-              preContractedValue: data.valorPreContratado,
-              freeBalance: data.saldoLivre,
-              blockedValue: data.valorBloqueado,
-            },
-          ],
-        },
-      }
-    } catch (error) {
-      console.log('error', error)
-    }
-  }
+  //     return {
+  //       success: status === 200,
+  //       externalCode: data.codigoExterno,
+  //       externalContractCode: data.codigoExternoContrato,
+  //       contractIdentifier: data.identificadorContrato,
+  //       receivablesUnitsDefinition: {
+  //         holderDocument: data.documentoTitular, // Agente financeiro - tipo efeito contrato troca de titularidade && Estabelecimento comercial - tipo efeito contrato - cessão fiduciária *IMPORTANTE - APENAS EM UR*
+  //         divisionRule: data.regraDivisao,
+  //         definitionStatus: data.situacaoDefinicao,
+  //         commitmentStatus: data.situacaoComprometimento,
+  //         coveredReceivables: [
+  //           // Fazer um map para fazer o transform de cada item
+  //           {
+  //             registrarCNPJ: data.cnpjRegistradora,
+  //             accreditorCNPJ: data.cnpjCredenciadora,
+  //             contractEffectIdentifier: data.identificadorEfeitoContrato,
+  //             finalRecipientUserDocument: data.documentoUsuarioFinalRecebedor, // EC
+  //             paymentArrangementCode: data.codigoArranjoPagamento,
+  //             constitutionStatus: data.situacaoConstituicao,
+  //             settlementDate: data.dataLiquidacao,
+  //             requestedEffectValue: data.valorEfeitoSolicitado,
+  //             committedEffectValue: data.valorEfeitoComprometido,
+  //             queueValue: data.valorFila,
+  //             commitmentOrder: data.ordemComprometimento,
+  //             totalConstitutedValue: data.valorConstituidoTotal,
+  //             preContractedValue: data.valorPreContratado,
+  //             freeBalance: data.saldoLivre,
+  //             blockedValue: data.valorBloqueado,
+  //           },
+  //         ],
+  //       },
+  //     }
+  //   } catch (error) {
+  //     console.log('error', error)
+  //   }
+  // }
 
   async createUR(
     params: CreateURInputDTO,
@@ -329,7 +329,6 @@ export class B3 implements RegisteringEntities {
     }
   }
 
-  // Atualiza de todas URs do contrato
   async saveDomicileUR(
     params: SaveURDomicileInputDTO,
   ): Promise<SaveURDomicileOutputDTO | undefined> {
@@ -340,7 +339,7 @@ export class B3 implements RegisteringEntities {
           DefinicaoUnidadesRecebiveis: {
             codigoExterno: params.externalCode,
             codigoExternoContrato: params.externalContractCode,
-            identificadorContrato: params.externalContractCode, // alterar
+            identificadorContrato: params.contractIdentifier, // alterar
             pagamento: {
               documentoTitularDomicilio: params.payment.holderDomicileDocument, // CPF ou CNPJ de quem vai receber
               tipoConta: params.payment.accountType,
@@ -365,32 +364,32 @@ export class B3 implements RegisteringEntities {
   }
 
   // Atualiza de todas URs do contrato - Quase nunca vai ser usado
-  async saveDetailedUR(
-    params: SaveURDetailedInputDTO,
-  ): Promise<SaveURDetailedOutputDTO | undefined> {
-    try {
-      const { data, status } = await this.request.put(
-        '/v2/definicao-unidades-recebiveis-detalhada',
-        {
-          DefinicaoUnidadesRecebiveis: {
-            codigoExterno: params.extenalCode,
-            codigoExternoContrato: params.externalContractCode,
-            identificadorContrato: params.externalContractCode,
-            recebiveisAbrangidos: params.coveredReceivables,
-          },
-        },
-      )
+  // async saveDetailedUR(
+  //   params: SaveURDetailedInputDTO,
+  // ): Promise<SaveURDetailedOutputDTO | undefined> {
+  //   try {
+  //     const { data, status } = await this.request.put(
+  //       '/v2/definicao-unidades-recebiveis-detalhada',
+  //       {
+  //         DefinicaoUnidadesRecebiveis: {
+  //           codigoExterno: params.extenalCode,
+  //           codigoExternoContrato: params.externalContractCode,
+  //           identificadorContrato: params.externalContractCode,
+  //           recebiveisAbrangidos: params.coveredReceivables,
+  //         },
+  //       },
+  //     )
 
-      return {
-        success: status === 200,
-        externalCode: data.codigoExterno,
-        externalContractCode: data.codigoExternoContrato,
-        contractIdentifier: data.identificadorContrato,
-      }
-    } catch (error) {
-      console.log('error', error)
-    }
-  }
+  //     return {
+  //       success: status === 200,
+  //       externalCode: data.codigoExterno,
+  //       externalContractCode: data.codigoExternoContrato,
+  //       contractIdentifier: data.identificadorContrato,
+  //     }
+  //   } catch (error) {
+  //     console.log('error', error)
+  //   }
+  // }
 
   async removeUR(
     params: RemoveURInputDTO,

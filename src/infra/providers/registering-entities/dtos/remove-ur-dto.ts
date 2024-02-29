@@ -1,5 +1,5 @@
 export interface RemoveURInputDTO {
-  operationType: 'baixa' | 'inativacao'
+  operationType: string // 'baixa' | 'inativacao'
   externalCode: string
   externalContractCode: string
   contractIdentifier: string

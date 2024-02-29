@@ -28,10 +28,10 @@ import {
   SaveContractInputDTO,
   SaveContractOutputDTO,
 } from '@infra/providers/registering-entities/dtos/save-contract-dto'
-import {
-  SaveURDetailedInputDTO,
-  SaveURDetailedOutputDTO,
-} from '@infra/providers/registering-entities/dtos/save-ur-detailed-dto'
+// import {
+//   SaveURDetailedInputDTO,
+//   SaveURDetailedOutputDTO,
+// } from '@infra/providers/registering-entities/dtos/save-ur-detailed-dto'
 import {
   SaveURDomicileInputDTO,
   SaveURDomicileOutputDTO,
@@ -44,10 +44,10 @@ import {
   ShowContractInputDTO,
   ShowContractOutputDTO,
 } from '@infra/providers/registering-entities/dtos/show-contract-dto'
-import {
-  ShowURInputDTO,
-  ShowUROutputDTO,
-} from '@infra/providers/registering-entities/dtos/show-ur-dto'
+// import {
+//   ShowURInputDTO,
+//   ShowUROutputDTO,
+// } from '@infra/providers/registering-entities/dtos/show-ur-dto'
 
 export interface RegisteringEntities {
   request: Axios
@@ -68,7 +68,7 @@ export interface RegisteringEntities {
     params: RemoveContractInputDTO,
   ): Promise<RemoveContractOutputDTO | undefined>
   // UR
-  showUR(params: ShowURInputDTO): Promise<ShowUROutputDTO | undefined>
+  // showUR(params: ShowURInputDTO): Promise<ShowUROutputDTO | undefined>
   createUR(params: CreateURInputDTO): Promise<CreateUROutputDTO | undefined>
   saveSimplifiedUR(
     params: SaveURSimplifiedInputDTO,
@@ -76,8 +76,8 @@ export interface RegisteringEntities {
   saveDomicileUR(
     params: SaveURDomicileInputDTO,
   ): Promise<SaveURDomicileOutputDTO | undefined>
-  saveDetailedUR(
-    params: SaveURDetailedInputDTO,
-  ): Promise<SaveURDetailedOutputDTO | undefined>
+  // saveDetailedUR(
+  //   params: SaveURDetailedInputDTO,
+  // ): Promise<SaveURDetailedOutputDTO | undefined>
   removeUR(params: RemoveURInputDTO): Promise<RemoveUROutputDTO | undefined>
 }
