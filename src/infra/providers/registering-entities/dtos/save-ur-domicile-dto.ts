@@ -16,6 +16,4 @@ export interface SaveURDomicileOutputDTO {
   externalCode: string
   externalContractCode: string
   contractIdentifier: string
-  processingProtocol: string
-  processingDateTime: string
 }

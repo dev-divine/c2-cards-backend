@@ -2,6 +2,7 @@ export interface RemoveURInputDTO {
   operationType: 'baixa' | 'inativacao'
   externalCode: string
   externalContractCode: string
+  contractIdentifier: string
 }
 
 export interface RemoveUROutputDTO {
@@ -9,6 +10,4 @@ export interface RemoveUROutputDTO {
   externalCode: string
   externalContractCode: string
   contractIdentifier: string
-  processingProtocol: string
-  processingDateTime: string
 }

@@ -119,7 +119,7 @@ model Contract {
   id                             String              @id @default(uuid())
   external_code                  String              @unique
   contract_identifier            String              @unique
-  contract_status                String
+  contract_status                String?
   debtor_contract_document       String // EC Client Document
   participant_cnpj               String              @default("47440351000187") // C2Cards Document
   holder_document                String // Financial Agent Document
@@ -132,7 +132,8 @@ model Contract {
   created_at                     DateTime            @default(now())
   updated_at                     DateTime            @updatedAt
   deleted_at                     DateTime?
-  DistributionResult             DistributionResult?
+
+  distributionResult             DistributionResult?
 
   @@map("contract")
 }

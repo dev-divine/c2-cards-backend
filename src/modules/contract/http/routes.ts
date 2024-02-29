@@ -1,17 +1,19 @@
 import { FastifyInstance } from 'fastify'
 
-import { createOptIn } from '@modules/opt/http/controllers/create-opt-in'
-import { createOptOut } from '@modules/opt/http/controllers/create-opt-out'
-import { listOptIns } from '@modules/opt/http/controllers/list-opt-ins'
-import { listOptOuts } from '@modules/opt/http/controllers/list-opt-outs'
+import { showContract } from '@modules/contract/http/controllers/show-contract'
+import { listContracts } from '@modules/contract/http/controllers/list-contracts'
+import { createContract } from '@modules/contract/http/controllers/create-contract'
+import { editContract } from '@modules/contract/http/controllers/edit-contract'
+import { removeContract } from '@modules/contract/http/controllers/remove-contract'
 
 // import { verifyJwt } from '@infra/http/middlewares/verify-jwt'
 
-export async function OptsRoutes(app: FastifyInstance) {
+export async function ContractRoutes(app: FastifyInstance) {
   // app.addHook('onRequest', verifyJwt)
 
-  app.get('/opt-in', listOptIns)
-  app.post('/opt-in', createOptIn)
-  app.get('/opt-out', listOptOuts)
-  app.put('/opt-out', createOptOut)
+  app.get('/contract', showContract)
+  app.get('/contract/list', listContracts)
+  app.post('/contract', createContract)
+  app.put('/contract', editContract)
+  app.delete('/contract', removeContract)
 }

@@ -4,6 +4,7 @@ export interface ShowContractInputDTO {
 }
 
 export interface ShowContractOutputDTO {
+  success: boolean
   contract: {
     externalCode: string // Código externo do contrato
     contractIdentifier: string // Código externo do contrato

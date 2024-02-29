@@ -7,7 +7,7 @@ import { listOptOuts } from '@modules/opt/http/controllers/list-opt-outs'
 
 // import { verifyJwt } from '@infra/http/middlewares/verify-jwt'
 
-export async function OptsRoutes(app: FastifyInstance) {
+export async function OptRoutes(app: FastifyInstance) {
   // app.addHook('onRequest', verifyJwt)
 
   app.get('/opt-in', listOptIns)

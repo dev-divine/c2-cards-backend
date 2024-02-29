@@ -116,11 +116,12 @@ export class B3 implements RegisteringEntities {
     params: ShowContractInputDTO,
   ): Promise<ShowContractOutputDTO | undefined> {
     try {
-      const { data } = await this.request.get(
+      const { data, status } = await this.request.get(
         `/v2/contrato/${params.externalCode}/${params.contractIdentifier}`,
       )
 
       return {
+        success: status === 200,
         contract: {
           externalCode: data.codigoExterno,
           contractIdentifier: data.identificadorContrato,
@@ -153,17 +154,17 @@ export class B3 implements RegisteringEntities {
     try {
       const { data } = await this.request.post('/v2/contrato', {
         Contrato: {
-          codigoExterno: params.externalCode,
-          identificadorContrato: params.externalCode,
+          codigoExterno: C2CardsCode.generateExternalCode(),
+          identificadorContrato: C2CardsCode.generateExternalCode(),
           documentoContratanteDivida: params.debtorContractDocument, // CNPJ ou CPF do "EC" com formatação
-          cnpjParticipante: params.participantDocument,
+          cnpjParticipante: env.C2_CARDS_DOCUMENT,
           cnpjDetentor: params.holderDocument, // Agente financeiro
           tipoEfeitoContrato: params.contractEffectType,
-          saldoDevedorOuLimite: params.guaranteedOperationLimit,
+          saldoDevedorOuLimite: params.outstandingBalanceOrLimit,
           valorMinimoASerMantido: params.minimumValueToBeMaintained,
           dataAssinatura: params.signatureDate,
           dataVencimento: params.expirationDate,
-          regraDivisao: params.divisionRule,
+          regraDivisao: 2,
         },
       })
 
@@ -181,7 +182,7 @@ export class B3 implements RegisteringEntities {
     params: SaveContractInputDTO,
   ): Promise<SaveContractOutputDTO | undefined> {
     try {
-      const { data } = await this.request.put('/v2/contrato', {
+      const { data, status } = await this.request.put('/v2/contrato', {
         Contrato: [
           {
             codigoExterno: params.externalCode,
@@ -193,6 +194,7 @@ export class B3 implements RegisteringEntities {
       })
 
       return {
+        success: status === 200,
         externalCode: data.codigoExterno,
         contractIdentifier: data.identificadorContrato,
       }

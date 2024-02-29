@@ -5,7 +5,8 @@ import fastify from 'fastify'
 import { ZodError } from 'zod'
 
 import { ECClientRoutes } from '@modules/ec-client/http/routes'
-import { OptsRoutes } from '@modules/opt/http/routes'
+import { OptRoutes } from '@modules/opt/http/routes'
+import { ContractRoutes } from '@modules/contract/http/routes'
 
 import { env } from '@infra/env'
 
@@ -27,7 +28,8 @@ app.register(fastifyJwt, {
 app.register(fastifyCookie)
 
 app.register(ECClientRoutes)
-app.register(OptsRoutes)
+app.register(OptRoutes)
+app.register(ContractRoutes)
 
 app.setErrorHandler((error, _, reply) => {
   if (error instanceof ZodError) {

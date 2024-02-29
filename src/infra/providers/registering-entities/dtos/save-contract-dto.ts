@@ -1,11 +1,11 @@
 export interface SaveContractInputDTO {
   externalCode: string
-  outstandingBalance: number
   outstandingBalanceOrLimit: number
   minimumValueToBeMaintained: number
 }
 
 export interface SaveContractOutputDTO {
+  success: boolean
   externalCode: string
   contractIdentifier: string
 }

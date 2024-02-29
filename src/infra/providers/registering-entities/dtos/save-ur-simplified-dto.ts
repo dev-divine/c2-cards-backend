@@ -16,6 +16,4 @@ export interface SaveURSimplifiedOutputDTO {
   externalCode: string
   externalContractCode: string
   contractIdentifier: string
-  processingProtocol: string
-  processingDateTime: string
 }

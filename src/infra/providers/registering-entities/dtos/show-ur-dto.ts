@@ -9,8 +9,6 @@ export interface ShowUROutputDTO {
   externalCode: string
   externalContractCode: string
   contractIdentifier: string
-  processingProtocol: string
-  processingDateTime: string
   receivablesUnitsDefinition: {
     holderDocument: string
     divisionRule: string

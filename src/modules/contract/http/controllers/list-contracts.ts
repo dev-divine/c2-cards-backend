@@ -3,8 +3,8 @@ import { z } from 'zod'
 
 import { zodDateParser, zodNumberParser } from '@core/utils/custom-zod-error'
 
-import { OptInViewModel } from '@modules/opt/http/view-models/opt-in-view-model'
-import { makeListOptInsUseCase } from '@modules/opt/use-cases/factories/make-list-opt-ins'
+import { makeListContractsUseCase } from '@modules/contract/use-cases/factories/make-list-contracts'
+import { ContractViewModel } from '@modules/contract/http/view-models/contract-view-model'
 
 export const querySchema = z.object({
   page: z.coerce
@@ -32,7 +32,10 @@ export const querySchema = z.object({
   end_date: z.coerce.date(zodDateParser('data de fim')).optional(),
 })
 
-export async function listOptIns(request: FastifyRequest, reply: FastifyReply) {
+export async function listContracts(
+  request: FastifyRequest,
+  reply: FastifyReply,
+) {
   const {
     page,
     per_page: perPage,
@@ -40,18 +43,20 @@ export async function listOptIns(request: FastifyRequest, reply: FastifyReply) {
     end_date: endDate,
   } = querySchema.parse(request.query)
 
-  const listOptInsUseCase = makeListOptInsUseCase()
+  const listContractsUseCase = makeListContractsUseCase()
 
-  const { optIns, totalPages, totalOptIns } = await listOptInsUseCase.execute({
-    page,
-    perPage,
-    startDate,
-    endDate,
-  })
+  const { contracts, totalPages, totalContracts } =
+    await listContractsUseCase.execute({
+      page,
+      perPage,
+      startDate,
+      endDate,
+    })
 
   return reply.status(200).send({
-    opt_ins: optIns?.map((citizen) => OptInViewModel.toHTTP(citizen)) ?? [],
+    contracts:
+      contracts?.map((contract) => ContractViewModel.toHTTP(contract)) ?? [],
     total_pages: totalPages,
-    total_opt_ins: totalOptIns,
+    total_contracts: totalContracts,
   })
 }

@@ -8,4 +8,3 @@ function generateExternalCode() {
 export const C2CardsCode = {
   generateExternalCode,
 }
-
