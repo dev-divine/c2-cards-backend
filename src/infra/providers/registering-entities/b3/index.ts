@@ -43,7 +43,10 @@ import {
   SaveURSimplifiedInputDTO,
   SaveURSimplifiedOutputDTO,
 } from '@infra/providers/registering-entities/dtos/save-ur-simplified-dto'
-import { ShowContractOutPutDTO } from '@infra/providers/registering-entities/dtos/show-contract-dto'
+import {
+  ShowContractInputDTO,
+  ShowContractOutputDTO,
+} from '@infra/providers/registering-entities/dtos/show-contract-dto'
 import {
   ShowURInputDTO,
   ShowUROutputDTO,
@@ -110,11 +113,11 @@ export class B3 implements RegisteringEntities {
   }
 
   async showContract(
-    externalCode: string,
-  ): Promise<ShowContractOutPutDTO | undefined> {
+    params: ShowContractInputDTO,
+  ): Promise<ShowContractOutputDTO | undefined> {
     try {
       const { data } = await this.request.get(
-        `/v2/contrato/${externalCode}/${externalCode}`,
+        `/v2/contrato/${params.externalCode}/${params.contractIdentifier}`,
       )
 
       return {
@@ -126,7 +129,7 @@ export class B3 implements RegisteringEntities {
           participantDocument: data.cnpjParticipante,
           holderDocument: data.cnpjDetentor, // Agente financeiro
           contractEffectType: data.tipoEfeitoContrato,
-          guaranteedOperationLimit: data.saldoDevedorOuLimite,
+          outstandingBalanceOrLimit: data.saldoDevedorOuLimite,
           minimumValueToBeMaintained: data.valorMinimoASerMantido,
           signatureDate: data.dataAssinatura,
           expirationDate: data.dataVencimento,

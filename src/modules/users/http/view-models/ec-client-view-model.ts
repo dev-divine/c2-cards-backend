@@ -1,4 +1,4 @@
-import { ECClient } from '@modules/ec-clients/entities/ec-client'
+import { ECClient } from '@modules/ec-client/entities/ec-client'
 
 export class ECClientViewModel {
   static toHTTP(eCClient: ECClient) {

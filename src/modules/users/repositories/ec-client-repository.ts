@@ -1,7 +1,7 @@
 // import { PaginationDTO } from '@modules/citizen/dtos/pagination-dto'
 // import { Citizen } from '@modules/citizen/entities/citizen'
 
-import { ECClient } from '@modules/ec-clients/entities/ec-client'
+import { ECClient } from '@modules/ec-client/entities/ec-client'
 
 export interface ECClientRepository {
   findById(id: string): Promise<ECClient | undefined>

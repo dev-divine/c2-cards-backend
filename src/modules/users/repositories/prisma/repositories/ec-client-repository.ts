@@ -1,10 +1,10 @@
 import { PrismaClient } from '@prisma/client'
 
-import { ECClientRepository } from '@modules/ec-clients/repositories/ec-client-repository'
+import { ECClientRepository } from '@modules/ec-client/repositories/ec-client-repository'
 
 import { prisma } from '@infra/database/prisma'
-import { ECClient } from '@modules/ec-clients/entities/ec-client'
-import { PrismaECClientMapper } from '@modules/ec-clients/repositories/prisma/mappers/prisma-ec-client-mapper'
+import { ECClient } from '@modules/ec-client/entities/ec-client'
+import { PrismaECClientMapper } from '@modules/ec-client/repositories/prisma/mappers/prisma-ec-client-mapper'
 
 export class PrismaECClientRepository implements ECClientRepository {
   private repository: PrismaClient

@@ -1,9 +1,9 @@
 import { FastifyInstance } from 'fastify'
 
-import { listECClients } from '@modules/ec-clients/http/controllers/list-ec-clients'
-import { createECClient } from '@modules/ec-clients/http/controllers/create-ec-client'
-import { saveECClient } from '@modules/ec-clients/http/controllers/save-ec-client'
-import { deleteECClient } from '@modules/ec-clients/http/controllers/delete-ec-client'
+import { createECClient } from '@modules/ec-client/http/controllers/create-ec-client'
+import { deleteECClient } from '@modules/ec-client/http/controllers/delete-ec-client'
+import { listECClients } from '@modules/ec-client/http/controllers/list-ec-clients'
+import { saveECClient } from '@modules/ec-client/http/controllers/save-ec-client'
 
 // import { verifyJwt } from '@infra/http/middlewares/verify-jwt'
 

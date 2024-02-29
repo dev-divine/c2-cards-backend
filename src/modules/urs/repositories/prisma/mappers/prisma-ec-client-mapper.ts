@@ -2,7 +2,7 @@ import { ECClient as RawECClient } from '@prisma/client'
 
 import { UniqueEntityID } from '@core/domain/entities/unique-entity-id'
 
-import { ECClient } from '@modules/ec-clients/entities/ec-client'
+import { ECClient } from '@modules/ec-client/entities/ec-client'
 
 export class PrismaECClientMapper {
   static toPrisma(eCClient: ECClient) {

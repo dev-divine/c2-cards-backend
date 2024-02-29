@@ -3,7 +3,7 @@ import { z } from 'zod'
 
 import { zodStringParser } from '@core/utils/custom-zod-error'
 
-import { makeDeleteECClientUseCase } from '@modules/ec-clients/use-cases/factories/make-delete-ec-client'
+import { makeDeleteECClientUseCase } from '@modules/ec-client/use-cases/factories/make-delete-ec-client'
 
 const paramsSchema = z.object({
   id: z

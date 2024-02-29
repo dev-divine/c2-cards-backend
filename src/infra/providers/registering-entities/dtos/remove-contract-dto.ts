@@ -8,6 +8,4 @@ export interface RemoveContractOutputDTO {
   success: boolean
   externalCode: string
   contractIdentifier: string
-  processingProtocol: string
-  processingDateTime: string
 }

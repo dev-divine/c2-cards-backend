@@ -99,7 +99,7 @@ model OptIn {
 
 model OptOut {
   id                   String    @id @default(uuid())
-  external_code        String   @unique
+  external_code        String    @unique
   ec_client_name       String
   ec_client_document   String
   c2cards_document     String    @unique @default("47440351000187")
@@ -113,6 +113,43 @@ model OptOut {
   deleted_at           DateTime?
 
   @@map("opt_out")
+}
+
+model Contract {
+  id                             String              @id @default(uuid())
+  external_code                  String              @unique
+  contract_identifier            String              @unique
+  contract_status                String
+  debtor_contract_document       String // EC Client Document
+  participant_cnpj               String              @default("47440351000187") // C2Cards Document
+  holder_document                String // Financial Agent Document
+  contract_effect_type           Int                 @default(1)
+  outstanding_balance_or_limit   Float
+  minimum_value_to_be_maintained Float
+  signature_date                 DateTime            @default(now())
+  expiration_date                DateTime
+  division_rule                  Int                 @default(2)
+  created_at                     DateTime            @default(now())
+  updated_at                     DateTime            @updatedAt
+  deleted_at                     DateTime?
+  DistributionResult             DistributionResult?
+
+  @@map("contract")
+}
+
+model DistributionResult {
+  id                                  String    @id @default(uuid())
+  contract_id                         String    @unique
+  affected_receivables_units_quantity Int
+  affected_receivables_units_value    Float
+  commitment_situation                String
+  created_at                          DateTime  @default(now())
+  updated_at                          DateTime  @updatedAt
+  deleted_at                          DateTime?
+
+  contract Contract @relation(fields: [contract_id], references: [id])
+
+  @@map("distribution_result")
 }
 
 model OnlineSchedule {
@@ -132,23 +169,3 @@ model OnlineSchedule {
 // incluir agenda recebida em um array (novo model)
 
 // model agenda batch
-
-model Contract {
-  id                             String    @id @default(uuid())
-  external_code                  String    @unique
-  ec_client_document             String
-  renegotiation                  Int       @default(0)
-  c2cards_document               String    @unique @default("47440351000187")
-  contract_effect_type           Int       @default(1)
-  outstanding_balance            Float
-  guaranteed_operation_limit     Float
-  minimum_value_to_be_maintained Float
-  signature_date                 DateTime  @default(now())
-  expiration_date                DateTime
-  division_rule                  Int       @default(2)
-  created_at                     DateTime  @default(now())
-  updated_at                     DateTime  @updatedAt
-  deleted_at                     DateTime?
-
-  @@map("contract")
-}

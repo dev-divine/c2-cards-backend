@@ -2,8 +2,8 @@ import { FastifyReply, FastifyRequest } from 'fastify'
 
 import { querySchema } from '@core/utils/zod-pagination-query-schema'
 
-import { makeListECClientsUseCase } from '@modules/ec-clients/use-cases/factories/make-list-ec-client'
 import { CitizenViewModel } from '@modules/citizen/http/view-models/citizen-view-model'
+import { makeListECClientsUseCase } from '@modules/ec-client/use-cases/factories/make-list-ec-client'
 
 export async function listECClients(
   request: FastifyRequest,

@@ -8,6 +8,4 @@ export interface SaveContractInputDTO {
 export interface SaveContractOutputDTO {
   externalCode: string
   contractIdentifier: string
-  processingProtocol: string
-  processingDateTime: Date
 }

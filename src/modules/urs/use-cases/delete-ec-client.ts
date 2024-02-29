@@ -1,6 +1,6 @@
 import { AppError } from '@core/domain/errors/app-error'
 
-import { ECClientRepository } from '@modules/ec-clients/repositories/ec-client-repository'
+import { ECClientRepository } from '@modules/ec-client/repositories/ec-client-repository'
 
 interface Input {
   id: string

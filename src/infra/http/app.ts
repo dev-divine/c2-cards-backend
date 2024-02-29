@@ -1,11 +1,11 @@
-import fastify from 'fastify'
+import fastifyCookie from '@fastify/cookie'
 import fastifyCors from '@fastify/cors'
 import fastifyJwt from '@fastify/jwt'
-import fastifyCookie from '@fastify/cookie'
+import fastify from 'fastify'
 import { ZodError } from 'zod'
 
-import { ECClientRoutes } from '@modules/ec-clients/http/routes'
-import { OptsRoutes } from '@modules/opts/http/routes'
+import { ECClientRoutes } from '@modules/ec-client/http/routes'
+import { OptsRoutes } from '@modules/opt/http/routes'
 
 import { env } from '@infra/env'
 

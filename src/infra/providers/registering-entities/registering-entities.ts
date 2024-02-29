@@ -40,7 +40,10 @@ import {
   SaveURSimplifiedInputDTO,
   SaveURSimplifiedOutputDTO,
 } from '@infra/providers/registering-entities/dtos/save-ur-simplified-dto'
-import { ShowContractOutPutDTO } from '@infra/providers/registering-entities/dtos/show-contract-dto'
+import {
+  ShowContractInputDTO,
+  ShowContractOutputDTO,
+} from '@infra/providers/registering-entities/dtos/show-contract-dto'
 import {
   ShowURInputDTO,
   ShowUROutputDTO,
@@ -52,7 +55,9 @@ export interface RegisteringEntities {
   registerOptIn(params: OptInInputDTO): Promise<OptInOutputDTO | undefined>
   registerOptOut(params: OptOutInputDTO): Promise<OptOutOutputDTO | undefined>
   // CONTRACT
-  showContract(externalCode: string): Promise<ShowContractOutPutDTO | undefined>
+  showContract(
+    params: ShowContractInputDTO,
+  ): Promise<ShowContractOutputDTO | undefined>
   createContract(
     params: CreateContractInputDTO,
   ): Promise<CreateContractOutputDTO | undefined>

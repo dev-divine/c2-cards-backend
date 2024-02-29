@@ -3,7 +3,7 @@ import { z } from 'zod'
 
 import { zodStringParser } from '@core/utils/custom-zod-error'
 
-import { makeCreateECClientUseCase } from '@modules/ec-clients/use-cases/factories/make-create-ec-client'
+import { makeCreateECClientUseCase } from '@modules/ec-client/use-cases/factories/make-create-ec-client'
 
 const bodySchema = z.object({
   company_name: z.string(zodStringParser('nome da empresa')),

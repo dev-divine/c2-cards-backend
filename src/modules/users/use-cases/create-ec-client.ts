@@ -1,7 +1,7 @@
 import { AppError } from '@core/domain/errors/app-error'
 
-import { ECClient } from '@modules/ec-clients/entities/ec-client'
-import { ECClientRepository } from '@modules/ec-clients/repositories/ec-client-repository'
+import { ECClient } from '@modules/ec-client/entities/ec-client'
+import { ECClientRepository } from '@modules/ec-client/repositories/ec-client-repository'
 
 interface Input {
   companyName: string
