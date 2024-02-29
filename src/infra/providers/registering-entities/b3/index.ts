@@ -52,6 +52,10 @@ import {
 //   ShowUROutputDTO,
 // } from '@infra/providers/registering-entities/dtos/show-ur-dto'
 import { RegisteringEntities } from '@infra/providers/registering-entities/registering-entities'
+import {
+  ShowOnlineScheduleInputDTO,
+  ShowOnlineScheduleOutputDTO,
+} from '../dtos/show-onlien-schedule'
 
 export class B3 implements RegisteringEntities {
   request: Axios
@@ -409,30 +413,34 @@ export class B3 implements RegisteringEntities {
       console.log('error', error)
     }
   }
-}
 
-// Input /v1.0/consulta-agenda-online
-/*
-{
-  "SolicitacaoConsultaAgenda": {
-    "documentoOriginador": "string", - CNPJ ou CPF do EC
-    "cnpjFinanciador": "string", - -Agente financeiro
-    "cnpjSolicitante": "string", - C2Cards cnpj
-    "cnpjCredenciadora": "string", // OPCIONAL
-    "codigoArranjoPagamento": "str", // OPCIONAL
-    "indicadorAceiteAgendaParcial": "str", "Sim" com S maiúsculo
-    "dataInicio": "2020-07-21", // DIA DE HORA PRA FRENTE
-    "dataFim": "2020-07-21" Prazo maximo 2 anos
+  async showOnlineSchedule(
+    params: ShowOnlineScheduleInputDTO,
+  ): Promise<ShowOnlineScheduleOutputDTO | undefined> {
+    try {
+      const { data, status } = await this.request.post(
+        '/v1.0/consulta-agenda-online',
+        {
+          SolicitacaoConsultaAgenda: {
+            documentoOriginador: params.originatorDocument,
+            cnpjFinanciador: params.financierCnpj,
+            cnpjSolicitante: env.C2_CARDS_DOCUMENT,
+            cnpjCredenciadora: params.accreditorCnpj,
+            codigoArranjoPagamento: params.paymentArrangementCode,
+            indicadorAceiteAgendaParcial: 'Sim',
+            dataInicio: params.startDate,
+            dataFim: params.endDate,
+          },
+        },
+      )
+
+      return {
+        success: status === 200,
+        scheduleProtocol: data.protocoloAgenda,
+        requestStatus: data.situacaoSolicitacao,
+      }
+    } catch (error) {
+      console.log('error', error)
+    }
   }
 }
-*/
-
-// Output
-/*
-{
-  "RetornoRequisicao": {
-    "protocoloAgenda": "string", // Buscar no malote
-    "situacaoSolicitacao": "string" 
-  }
-}
-*/

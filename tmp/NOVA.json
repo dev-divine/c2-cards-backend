@@ -1,0 +1,6164 @@
+{
+  "dadosControle": {
+    "dataCriacao": "2024-02-27",
+    "dataReferencia": "2024-02-27",
+    "dataHoraSolicitacao": "2024-02-27T18:56:23.000Z",
+    "dataHoraRecepcao": "2024-02-27T18:58:29.974Z",
+    "idBatch": "9274375c-12ab-41f5-85da-9e50d7a0f47e",
+    "protocoloAgendaOnline": "B3-2024022703830746"
+  },
+  "anuencia": [
+    {
+      "idAnuencia": "a41a0361-1e65-4168-80db-d5e512fd0e4b",
+      "dataFimAnuencia": "2024-02-28",
+      "cnpjSolicitante": "47.440.351/0001-87",
+      "cnpjFinanciador": "27.191.893/0001-56"
+    }
+  ],
+  "unidadesRecebiveis": [
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-02-01",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-27",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-12",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-02-07",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-24",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-02-02",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-25",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-16",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-17",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-08",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-01",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-02-06",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-23",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-02-04",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-28",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-20",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-30",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-11",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-10",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-21",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-31",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-09",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-03",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-22",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-07",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-04",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-14",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-13",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-02-03",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-29",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-18",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-15",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-26",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-05",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-19",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-06",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-02-05",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-02-01",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-04",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-24",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-06",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-02-05",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-07",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-21",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-02-03",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-19",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-13",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-10",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-22",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-17",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-16",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-01",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-31",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-02-07",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-20",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-08",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-27",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-28",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-26",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-25",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-11",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-02-06",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-18",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-23",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-29",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-05",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-12",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-15",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-14",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-02-02",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-03",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-02-04",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-30",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-09",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-25",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-26",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-20",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-02-04",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-02-01",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-19",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-06",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-08",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-14",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-09",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-02",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-12",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-15",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-01",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-10",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-11",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-21",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-28",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-23",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-22",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-05",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-17",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-02-02",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-31",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-07",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-13",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-02-07",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-16",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-02-06",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-29",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-03",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-04",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-02-03",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-02-05",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-24",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-30",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "MCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-27",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "ACC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-02-06",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "ACC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-02-04",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "ACC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-05",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "HCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-02-05",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "HCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-01",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "HCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-21",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "ECD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-31",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "ECD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-06",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "ECD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-09",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "ECD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-02-05",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "ECD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-05",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "ECD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-21",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "ECD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-03",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "ECD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-25",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "ECD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-14",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "ECD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-02-06",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "ECD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-02-03",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "ECD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-04",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "ECD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-12",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "ECD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-08",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "ECD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-24",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "ECD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-19",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "ECD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-18",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "ECD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-22",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "ECD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-28",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "ECD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-02-01",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "ECD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-29",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "ECD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-02-02",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "ECD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-16",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "ECD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-13",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "ECD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-01",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "ECD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-15",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "ECD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-23",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "ECD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-02-04",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "ECD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-20",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "ECD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-11",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "ECD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-02-07",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "ECD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-07",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "ECD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-10",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "ECD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-26",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "ECD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-17",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "ECD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-30",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "ECD",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-27",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-30",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-11",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-10",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-09",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-04",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-02-06",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-02-05",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-23",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-21",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-14",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-22",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-12",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-05",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-29",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-02-04",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-17",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-13",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-01",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-15",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-02-02",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-26",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-07",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-06",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-19",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-02-01",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-28",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-03",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-02-07",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-20",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-02-03",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-18",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-24",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-27",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-25",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-31",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-02",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-08",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cpfCnpjOriginador": "18.607.268/0001-51",
+      "arranjo": "VCC",
+      "cnpjCredenciadora": "08.561.701/0143-23",
+      "cnpjRegistradora": null,
+      "dataPrevistaLiquidacao": "2024-01-16",
+      "valores": {
+        "valorConstituidoTotal": 0.00,
+        "valorConstituidoPreContratado": 0.00,
+        "valorComprometidoTotal": null,
+        "valorTotalLiquidadoDia": null,
+        "valorLivreTotal": null
+      },
+      "liquidacoes": [
+        {
+          "tipoObrigacao": "saldoLivre",
+          "dataEfetivaLiquidacao": "",
+          "domicilios": [
+            {
+              "valorLiquidacao": 0.00,
+              "agencia": "",
+              "conta": "",
+              "digitoConta": "",
+              "ispb": "",
+              "tipoDocumento": "",
+              "documentoTitularConta": "",
+              "tipoConta": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

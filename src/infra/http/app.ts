@@ -8,6 +8,7 @@ import { ECClientRoutes } from '@modules/ec-client/http/routes'
 import { OptRoutes } from '@modules/opt/http/routes'
 import { ContractRoutes } from '@modules/contract/http/routes'
 import { URRoutes } from '@modules/ur/http/routes'
+import { ScheduleRoutes } from '@modules/schedule/http/routes'
 
 import { env } from '@infra/env'
 
@@ -32,6 +33,7 @@ app.register(ECClientRoutes)
 app.register(OptRoutes)
 app.register(ContractRoutes)
 app.register(URRoutes)
+app.register(ScheduleRoutes)
 
 app.setErrorHandler((error, _, reply) => {
   if (error instanceof ZodError) {

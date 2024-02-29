@@ -44,6 +44,10 @@ import {
   ShowContractInputDTO,
   ShowContractOutputDTO,
 } from '@infra/providers/registering-entities/dtos/show-contract-dto'
+import {
+  ShowOnlineScheduleInputDTO,
+  ShowOnlineScheduleOutputDTO,
+} from './dtos/show-onlien-schedule'
 // import {
 //   ShowURInputDTO,
 //   ShowUROutputDTO,
@@ -80,4 +84,7 @@ export interface RegisteringEntities {
   //   params: SaveURDetailedInputDTO,
   // ): Promise<SaveURDetailedOutputDTO | undefined>
   removeUR(params: RemoveURInputDTO): Promise<RemoveUROutputDTO | undefined>
+  showOnlineSchedule(
+    params: ShowOnlineScheduleInputDTO,
+  ): Promise<ShowOnlineScheduleOutputDTO | undefined>
 }

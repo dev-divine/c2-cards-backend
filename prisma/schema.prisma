@@ -9,11 +9,15 @@ datasource db {
 
 model OnlineSchedule {
   id                                    String    @id @default(uuid())
+  schedule_protocol                     String
+  request_status                        String
+  originator_document                   String
+  financier_cnpj                        String
+  accreditor_cnpj                       String
+  payment_arrangement_code              String
+  partial_schedule_acceptance_indicator String    @default("Sim")
   start_date                            DateTime
   end_date                              DateTime
-  partial_schedule_acceptance_indicator String    @default("Sim")
-  schedule_protocol                     String?
-  request_status                        String?
   created_at                            DateTime  @default(now())
   updated_at                            DateTime  @updatedAt
   deleted_at                            DateTime?
@@ -181,15 +185,15 @@ model UR {
   updated_at             DateTime  @updatedAt
   deleted_at             DateTime?
 
-  payment                      Payment?
+  payment            Payment?
   covered_receivable CoveredReceivable[]
 
   @@map("urs")
 }
 
 model Payment {
-  id                       String    @id @default(uuid())
-  ur_id                    String    @unique
+  id                       String @id @default(uuid())
+  ur_id                    String @unique
   holder_domicile_document String
   account_type             String
   compe                    String
@@ -203,15 +207,105 @@ model Payment {
 }
 
 model CoveredReceivable {
-  id                            String    @id @default(uuid())
+  id                            String   @id @default(uuid())
   ur_id                         String
   accreditor_cnpj               String
   final_recipient_user_document String
   payment_arrangement_code      String
   settlement_date               DateTime
-  amount_to_encumber                Float
+  amount_to_encumber            Float
 
   uR UR @relation(fields: [ur_id], references: [id])
 
   @@map("covered_receivables")
+}
+
+// Agenda - ONLINE SCHEDULE
+
+model DadosControle {
+  id                    String             @id @default(uuid())
+  dataCriacao           DateTime
+  dataReferencia        DateTime
+  dataHoraSolicitacao   DateTime
+  dataHoraRecepcao      DateTime
+  idBatch               String
+  protocoloAgendaOnline String
+  anuencia              Anuencia[]
+  unidadesRecebiveis    UnidadeRecebivel[]
+}
+
+model Anuencia {
+  id              String        @id @default(uuid())
+  dataFimAnuencia DateTime
+  cnpjSolicitante String
+  cnpjFinanciador String
+  dadosControleId String
+  dadosControle   DadosControle @relation(fields: [dadosControleId], references: [id])
+}
+
+model UnidadeRecebivel {
+  id                     String        @id @default(uuid())
+  cpfCnpjOriginador      String
+  arranjo                String
+  cnpjCredenciadora      String?
+  cnpjRegistradora       String?
+  dataPrevistaLiquidacao DateTime
+  dadosControleId        String
+  dadosControle          DadosControle @relation(fields: [dadosControleId], references: [id])
+  valores                Valor[]
+  liquidacoes            Liquidacao[]
+}
+
+model Valor {
+  id                            String           @id @default(uuid())
+  valorConstituidoTotal         Float
+  valorConstituidoPreContratado Float
+  valorComprometidoTotal        Float?
+  valorTotalLiquidadoDia        Float?
+  valorLivreTotal               Float?
+  unidadeRecebivelId            String
+  unidadeRecebivel              UnidadeRecebivel @relation(fields: [unidadeRecebivelId], references: [id])
+}
+
+model Liquidacao {
+  id                    String           @id @default(uuid())
+  tipoObrigacao         String
+  indicadorOrdemEfeito  String
+  dataEfetivaLiquidacao DateTime?
+  unidadeRecebivelId    String
+  unidadeRecebivel      UnidadeRecebivel @relation(fields: [unidadeRecebivelId], references: [id])
+  efeitoContrato        EfeitoContrato?
+  domicilios            Domicilio[]
+}
+
+model EfeitoContrato {
+  id                     String     @id @default(uuid())
+  cpfCnpjTitularContrato String
+  idEfeitoContrato       String
+  saldoDevedorOuLimite   Float
+  valorASerMantido       Float
+  regraReparticao        String
+  tipoEfeito             String
+  tipoOnus               String?
+  dataVencimentoEfeito   DateTime
+  regraDivisao           String
+  liquidacaoId           String @unique
+  liquidacao             Liquidacao @relation(fields: [liquidacaoId], references: [id])
+}
+
+model Domicilio {
+  id                      String     @id @default(uuid())
+  valorLiquidacao         Float
+  valorEfeitoSolicitado   Float
+  valorEfeitoComprometido Float
+  valorEfeitoAConstituir  Float
+  agencia                 String?
+  conta                   String?
+  digitoConta             String?
+  ispb                    String?
+  tipoDocumento           String?
+  documentoTitularConta   String?
+  tipoConta               String?
+  liquidacaoId            String
+  liquidacao              Liquidacao @relation(fields: [liquidacaoId], references: [id])
 }
