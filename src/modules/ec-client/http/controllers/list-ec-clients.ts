@@ -2,8 +2,8 @@ import { FastifyReply, FastifyRequest } from 'fastify'
 
 import { querySchema } from '@core/utils/zod-pagination-query-schema'
 
-import { CitizenViewModel } from '@modules/citizen/http/view-models/citizen-view-model'
 import { makeListECClientsUseCase } from '@modules/ec-client/use-cases/factories/make-list-ec-client'
+import { ECClientViewModel } from '@modules/ec-client/http/view-models/ec-client-view-model'
 
 export async function listECClients(
   request: FastifyRequest,
@@ -13,14 +13,14 @@ export async function listECClients(
 
   const listECClientsUseCase = makeListECClientsUseCase()
 
-  const { ecClients, totalPages } = await listECClientsUseCase.execute({
+  const { eCClients, totalPages } = await listECClientsUseCase.execute({
     page,
     perPage,
   })
 
   return reply.status(200).send({
     citizens:
-      citizens?.map((citizen) => CitizenViewModel.toHTTP(citizen)) ?? [],
+      eCClients?.map((eCClient) => ECClientViewModel.toHTTP(eCClient)) ?? [],
     totalPages,
   })
 }

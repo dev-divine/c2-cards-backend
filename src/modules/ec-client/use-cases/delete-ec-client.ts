@@ -6,7 +6,9 @@ interface Input {
   id: string
 }
 
-type Output = void
+interface Output {
+  success: boolean
+}
 
 export class DeleteECClientUseCase {
   constructor(private readonly eCClientRepository: ECClientRepository) {}
@@ -19,6 +21,10 @@ export class DeleteECClientUseCase {
       })
     }
 
-    await this.eCClientRepository.delete(id)
+    const success = await this.eCClientRepository.delete(id)
+
+    return {
+      success,
+    }
   }
 }

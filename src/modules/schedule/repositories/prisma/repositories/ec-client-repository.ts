@@ -41,49 +41,8 @@ export class PrismaECClientRepository implements ECClientRepository {
     return PrismaECClientMapper.toDomain(eCClient)
   }
 
-  // async findByPhone(phone: string): Promise<Citizen | undefined> {
-  //   const citizen = await this.repository.citizen.findUnique({
-  //     where: {
-  //       phone,
-  //     },
-  //   })
-
-  //   if (!citizen) {
-  //     return
-  //   }
-
-  //   return PrismaCitizenMapper.toDomain(citizen)
-  // }
-
-  // async findMany({
-  //   page,
-  //   perPage,
-  // }: PaginationDTO): Promise<Citizen[] | undefined> {
-  //   const skip = (page - 1) * perPage
-
-  //   const citizens = await this.repository.citizen.findMany({
-  //     skip,
-  //     take: perPage,
-  //     orderBy: {
-  //       updated_at: 'desc',
-  //     },
-  //   })
-
-  //   if (!citizens) {
-  //     return
-  //   }
-
-  //   return citizens.map((citizen) => PrismaCitizenMapper.toDomain(citizen))
-  // }
-
-  // async getTotalPages(perPage: number): Promise<number> {
-  //   const totalItems = await this.repository.citizen.count()
-
-  //   return Math.ceil(totalItems / perPage)
-  // }
-
-  async create(citizen: ECClient): Promise<ECClient> {
-    const prismaeCClient = PrismaECClientMapper.toPrisma(citizen)
+  async create(eCClient: ECClient): Promise<ECClient> {
+    const prismaeCClient = PrismaECClientMapper.toPrisma(eCClient)
 
     const createdECClient = await this.repository.eCClient.create({
       data: prismaeCClient,
@@ -92,26 +51,13 @@ export class PrismaECClientRepository implements ECClientRepository {
     return PrismaECClientMapper.toDomain(createdECClient)
   }
 
-  // async save(citizen: Citizen): Promise<Citizen> {
-  //   const prismaCitizen = PrismaCitizenMapper.toPrisma(citizen)
-
-  //   const updatedCitizen = await this.repository.citizen.update({
-  //     where: {
-  //       id: prismaCitizen.id,
-  //     },
-  //     data: prismaCitizen,
-  //   })
-
-  //   return PrismaCitizenMapper.toDomain(updatedCitizen)
-  // }
-
-  async delete(id: string): Promise<void> {
+  async delete(id: string): Promise<boolean> {
     const itemToRemove = await this.repository.eCClient.findUnique({
       where: { id },
     })
 
     if (!itemToRemove) {
-      return
+      return false
     }
 
     await this.repository.eCClient.delete({

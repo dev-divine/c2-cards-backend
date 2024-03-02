@@ -27,7 +27,7 @@ interface Input {
 }
 
 interface Output {
-  citizen: ECClient | undefined
+  eCClient: ECClient | undefined
 }
 
 export class CreateECClientUseCase {
@@ -81,7 +81,7 @@ export class CreateECClientUseCase {
       })
     }
 
-    const citizen = ECClient.create({
+    const eCClient = ECClient.create({
       companyName,
       companyDocument,
       companyEmail,
@@ -104,10 +104,10 @@ export class CreateECClientUseCase {
       complement: complement ?? 'Não informado',
     })
 
-    await this.eCClientRepository.create(citizen)
+    await this.eCClientRepository.create(eCClient)
 
     return {
-      citizen,
+      eCClient,
     }
   }
 }

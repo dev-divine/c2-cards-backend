@@ -3,8 +3,8 @@ import { z } from 'zod'
 
 import { zodStringParser } from '@core/utils/custom-zod-error'
 
-import { makeSaveCitizenUseCase } from '@modules/citizen/use-cases/factories/make-save-citizen'
-import { CitizenViewModel } from '@modules/citizen/http/view-models/citizen-view-model'
+import { makeSaveECClientUseCase } from '@modules/ec-client/use-cases/factories/make-save-ec-client'
+import { ECClientViewModel } from '@modules/ec-client/http/view-models/ec-client-view-model'
 
 const paramsSchema = z.object({
   id: z
@@ -64,7 +64,6 @@ const bodySchema = z.object({
     .optional(),
 })
 
-
 export async function saveECClient(
   request: FastifyRequest,
   reply: FastifyReply,
@@ -98,7 +97,7 @@ export async function saveECClient(
 
   const saveECClientUseCase = makeSaveECClientUseCase()
 
-  await saveECClientUseCase.execute({
+  const { eCClient } = await saveECClientUseCase.execute({
     id,
     companyName,
     companyDocument,
@@ -124,5 +123,7 @@ export async function saveECClient(
     responsibleComplement,
   })
 
-  return reply.status(200).send()
+  return reply.status(200).send({
+    eCClient: eCClient ? ECClientViewModel.toHTTP(eCClient) : undefined,
+  })
 }

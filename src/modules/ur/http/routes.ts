@@ -13,11 +13,9 @@ import { removeUr } from '@modules/ur/http/controllers/remove-ur'
 export async function URRoutes(app: FastifyInstance) {
   // app.addHook('onRequest', verifyJwt)
 
-  // app.get('/ur', showUr)
   app.get('/ur/list', listUrs)
   app.post('/ur', createUr)
-  // app.put('/ur', editDetailedUr)
-  app.put('/ur', editDomicileUr)
-  app.put('/ur', editSimplifiedUr)
+  app.put('/ur/domicile', editDomicileUr)
+  app.put('/ur/simplified', editSimplifiedUr)
   app.delete('/ur', removeUr)
 }

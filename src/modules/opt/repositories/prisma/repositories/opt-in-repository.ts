@@ -14,13 +14,13 @@ export class PrismaOptInRepository implements OptInRepository {
     this.repository = prisma
   }
 
-  async fetchTotalOptIns(): Promise<number> {
-    return await this.repository.optIn.count()
-  }
-
   async fetchTotalPages(perPage: number): Promise<number> {
     const totalItems = await this.repository.optIn.count()
     return Math.ceil(totalItems / perPage)
+  }
+
+  async count(): Promise<number> {
+    return await this.repository.optIn.count()
   }
 
   async listOptIns(filters: FilterDTO): Promise<OptIn[]> {
@@ -57,22 +57,26 @@ export class PrismaOptInRepository implements OptInRepository {
     return optIns.map((optIn) => PrismaOptInMapper.toDomain(optIn))
   }
 
-  async createOptIn(optIn: OptIn): Promise<void> {
+  async createOptIn(optIn: OptIn): Promise<OptIn> {
     const prismaOptIn = PrismaOptInMapper.toPrisma(optIn)
 
-    await this.repository.optIn.create({
+    const createdOptIn = await this.repository.optIn.create({
       data: prismaOptIn,
     })
+
+    return PrismaOptInMapper.toDomain(createdOptIn)
   }
 
-  async saveOptIn(optIn: OptIn): Promise<void> {
+  async saveOptIn(optIn: OptIn): Promise<OptIn> {
     const prismaOptIn = PrismaOptInMapper.toPrisma(optIn)
 
-    await this.repository.optIn.update({
+    const updatedOptIn = await this.repository.optIn.update({
       where: {
         id: prismaOptIn.id,
       },
       data: prismaOptIn,
     })
+
+    return PrismaOptInMapper.toDomain(updatedOptIn)
   }
 }

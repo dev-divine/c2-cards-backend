@@ -50,7 +50,7 @@ export async function listOptIns(request: FastifyRequest, reply: FastifyReply) {
   })
 
   return reply.status(200).send({
-    opt_ins: optIns?.map((citizen) => OptInViewModel.toHTTP(citizen)) ?? [],
+    opt_ins: optIns?.map((optIn) => OptInViewModel.toHTTP(optIn)) ?? [],
     total_pages: totalPages,
     total_opt_ins: totalOptIns,
   })

@@ -7,7 +7,7 @@ interface Input {
 }
 
 interface Output {
-  citizens: ECClient[] | undefined
+  eCClients: ECClient[] | undefined
   totalPages: number
 }
 
@@ -15,15 +15,15 @@ export class ListECClientsUseCase {
   constructor(private readonly eCClientRepository: ECClientRepository) {}
 
   async execute({ page, perPage }: Input): Promise<Output> {
-    const citizens = await this.eCClientRepository.findMany({
+    const eCClients = await this.eCClientRepository.listECClients({
       page,
       perPage,
     })
 
-    const totalPages = await this.eCClientRepository.getTotalPages(perPage)
+    const totalPages = await this.eCClientRepository.fetchTotalPages(perPage)
 
     return {
-      citizens,
+      eCClients,
       totalPages,
     }
   }

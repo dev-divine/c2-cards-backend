@@ -40,22 +40,26 @@ export class PrismaOptOutRepository implements OptOutRepository {
     return optOuts.map((optOut) => PrismaOptOutMapper.toDomain(optOut))
   }
 
-  async createOptOut(optOut: OptOut): Promise<void> {
+  async createOptOut(optOut: OptOut): Promise<OptOut> {
     const prismaOptOut = PrismaOptOutMapper.toPrisma(optOut)
 
-    await this.repository.optOut.create({
+    const createdOptOut = await this.repository.optOut.create({
       data: prismaOptOut,
     })
+
+    return PrismaOptOutMapper.toDomain(createdOptOut)
   }
 
-  async saveOptOut(optOut: OptOut): Promise<void> {
+  async saveOptOut(optOut: OptOut): Promise<OptOut> {
     const prismaOptOut = PrismaOptOutMapper.toPrisma(optOut)
 
-    await this.repository.optOut.update({
+    const updatedOptOut = await this.repository.optOut.update({
       where: {
         id: prismaOptOut.id,
       },
       data: prismaOptOut,
     })
+
+    return PrismaOptOutMapper.toDomain(updatedOptOut)
   }
 }

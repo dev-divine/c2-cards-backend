@@ -29,7 +29,7 @@ export class ListURsUseCase {
     })
 
     const totalPages = await this.uRRepository.fetchTotalPages(perPage)
-    const totalUrs = await this.uRRepository.fetchTotalUrs()
+    const totalUrs = await this.uRRepository.count()
 
     return {
       urs,

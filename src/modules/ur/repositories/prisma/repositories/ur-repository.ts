@@ -1,12 +1,12 @@
 import { PrismaClient } from '@prisma/client'
 
 import { UR } from '@modules/ur/entities/ur'
-import { URRepository } from '@modules/ur/repositories/ur-repository'
 import { PrismaURMapper } from '@modules/ur/repositories/prisma/mappers/prisma-ur-mapper'
+import { URRepository } from '@modules/ur/repositories/ur-repository'
 
-import { FilterDTO } from '@modules/ur/dtos/filter-dto'
 import { SaveURDomicileDTO } from '@modules/contract/dtos/save-ur-domicile-dto'
 import { SaveURSimplifiedDTO } from '@modules/contract/dtos/save-ur-simplified'
+import { FilterDTO } from '@modules/ur/dtos/filter-dto'
 
 import { prisma } from '@infra/database/prisma'
 
@@ -22,7 +22,7 @@ export class PrismaURRepository implements URRepository {
     return Math.ceil(totalItems / perPage)
   }
 
-  async fetchTotalUrs(): Promise<number> {
+  async count(): Promise<number> {
     return await this.repository.uR.count()
   }
 

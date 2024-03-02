@@ -4,6 +4,7 @@ import { z } from 'zod'
 import { zodStringParser } from '@core/utils/custom-zod-error'
 
 import { makeCreateECClientUseCase } from '@modules/ec-client/use-cases/factories/make-create-ec-client'
+import { ECClientViewModel } from '../view-models/ec-client-view-model'
 
 const bodySchema = z.object({
   company_name: z.string(zodStringParser('nome da empresa')),
@@ -88,7 +89,7 @@ export async function createECClient(
 
   const createECClientUseCase = makeCreateECClientUseCase()
 
-  await createECClientUseCase.execute({
+  const { ECClient } = await createECClientUseCase.execute({
     companyName,
     companyDocument,
     companyPhone,
@@ -113,5 +114,7 @@ export async function createECClient(
     responsibleComplement,
   })
 
-  return reply.status(201).send()
+  return reply.status(201).send({
+    ec_client: ECClient ? ECClientViewModel.toHTTP(ECClient) : undefined,
+  })
 }
