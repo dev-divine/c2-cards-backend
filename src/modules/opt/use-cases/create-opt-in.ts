@@ -17,7 +17,9 @@ interface Input {
   expirationDate?: string
 }
 
-type Output = void
+interface Output {
+  optIn: OptIn | undefined
+}
 
 export class CreateOptInUseCase {
   constructor(
@@ -67,5 +69,9 @@ export class CreateOptInUseCase {
     })
 
     await this.optInRepository.createOptIn(optInEntity)
+
+    return {
+      optIn: optInEntity,
+    }
   }
 }

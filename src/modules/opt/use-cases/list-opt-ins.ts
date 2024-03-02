@@ -29,7 +29,7 @@ export class ListOptInsUseCase {
     })
 
     const totalPages = await this.optInRepository.fetchTotalPages(perPage)
-    const totalOptIns = await this.optInRepository.fetchTotalOptIns()
+    const totalOptIns = await this.optInRepository.count()
 
     return {
       optIns,

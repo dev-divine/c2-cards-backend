@@ -1,5 +1,4 @@
 import { UniqueEntityID } from '@core/domain/entities/unique-entity-id'
-import { AppError } from '@core/domain/errors/app-error'
 
 import { ECClient } from '@modules/ec-client/entities/ec-client'
 import { ECClientRepository } from '@modules/ec-client/repositories/ec-client-repository'
@@ -12,35 +11,16 @@ interface Input {
 }
 
 interface Output {
-  citizen: ECClient | undefined
+  eCClient: ECClient | undefined
 }
 
 export class SaveECClientUseCase {
   constructor(private readonly eCClientRepository: ECClientRepository) {}
 
   async execute({ id, name, cpf, phone }: Input): Promise<Output> {
-    const citizenToUpdate = await this.eCClientRepository.findById(id)
-    if (!citizenToUpdate) {
-      throw new AppError({
-        code: 'citizen.citizen_not_found',
-      })
-    }
+    const eCClientToUpdate = await this.eCClientRepository.findById(id)
 
-    const cpfAlreadyExists = await this.eCClientRepository.findByDocument(cpf)
-    if (cpfAlreadyExists) {
-      throw new AppError({
-        code: 'citizen.cpf_already_exists',
-      })
-    }
-
-    const phoneAlreadyExists = await this.eCClientRepository.findByPhone(phone)
-    if (phoneAlreadyExists) {
-      throw new AppError({
-        code: 'citizen.phone_already_exists',
-      })
-    }
-
-    const citizen = ECClient.create(
+    const eCClient = ECClient.create(
       {
         name,
         cpf,
@@ -49,10 +29,10 @@ export class SaveECClientUseCase {
       new UniqueEntityID(id),
     )
 
-    await this.eCClientRepository.save(citizen)
+    await this.eCClientRepository.save(eCClient)
 
     return {
-      citizen,
+      eCClient,
     }
   }
 }

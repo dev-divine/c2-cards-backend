@@ -19,9 +19,11 @@ export async function deleteECClient(
 
   const deleteECClientUseCase = makeDeleteECClientUseCase()
 
-  await deleteECClientUseCase.execute({
+  const { success } = await deleteECClientUseCase.execute({
     id,
   })
 
-  return reply.status(204).send()
+  return reply.status(204).send({
+    success,
+  })
 }
