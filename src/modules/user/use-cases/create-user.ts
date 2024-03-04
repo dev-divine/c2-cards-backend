@@ -7,9 +7,13 @@ import { Hash } from '@infra/providers/hash/hash'
 
 interface Input {
   name: string
+  surname: string
   email: string
   document: string
   phone: string
+  whatsapp: string
+  job?: string
+  role?: UserRole
   password: string
 }
 
@@ -25,9 +29,12 @@ export class CreateUserUseCase {
 
   async execute({
     name,
+    surname,
     email,
     document,
     phone,
+    whatsapp,
+    job,
     password,
   }: Input): Promise<Output> {
     const emailAlreadyExists = await this.userRepository.findByEmail(email)
@@ -52,22 +59,24 @@ export class CreateUserUseCase {
         code: 'user.phone_already_exists',
       })
     }
-    console.log('validou phone')
-    console.log(password)
+    //console.log('validou phone')
+    //console.log(password)
     try {
       const passwordHashed = await this.hash.generate(password)
-
+      //Aqui pego o a senha hasheada
+      //console.log("Senha",passwordHashed)
       const user = User.create({
         name,
+        surname,
         email,
         document,
         phone,
-        password: passwordHashed ?? 's',
+        whatsapp,
+        job,
         role: UserRole.USER,
-        lastRent: undefined,
-        numberOfRentals: 0,
+        password: passwordHashed ?? 's',
       })
-
+      console.log(user)
       await this.userRepository.create(user)
 
       return {

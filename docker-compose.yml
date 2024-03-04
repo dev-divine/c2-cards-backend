@@ -9,3 +9,14 @@ services:
       - POSTGRESQL_USERNAME=postgres
       - POSTGRESQL_PASSWORD=docker
       - POSTGRESQL_DATABASE=c2cards
+    volumes:
+      - ./pgdata:/bitnami/postgresql
+
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      PGADMIN_DEFAULT_EMAIL: myemail@example.com
+      PGADMIN_DEFAULT_PASSWORD: mypassword

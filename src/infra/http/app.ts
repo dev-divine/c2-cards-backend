@@ -14,6 +14,8 @@ import { URRoutes } from '@modules/ur/http/routes'
 // import { ScheduleRoutes } from '@modules/schedule/http/routes'
 
 import { env } from '@infra/env'
+import { User } from '@modules/user/entities/user'
+import { UserRoutes } from '@modules/user/http/routes'
 
 export const app = fastify()
 
@@ -37,6 +39,7 @@ app.register(ECClientRoutes)
 app.register(OptRoutes)
 app.register(ContractRoutes)
 app.register(URRoutes)
+app.register(UserRoutes)
 // app.register(ScheduleRoutes)
 
 app.setErrorHandler((error, req, reply) => {

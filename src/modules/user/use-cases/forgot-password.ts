@@ -4,7 +4,7 @@ import { AppError } from '@core/domain/errors/app-error'
 import { UserRepository } from '@modules/user/repositories/user-repository'
 import { UserTokensRepository } from '@modules/user/repositories/user-tokens-respository'
 
-import { DateInstance } from '@infra/providers/date/date'
+
 import { Hash } from '@infra/providers/hash/hash'
 
 interface ForgotPasswordInput {

@@ -8,41 +8,40 @@ export enum UserRole {
   DIRECTOR = 'DIRECTOR',
   DIVISION_HEAD = 'DIVISION_HEAD',
   USER = 'USER',
+  
 }
 
 interface Props {
-  sportsFacilityId?: string
   name: string
+  surname: string
   email: string
   document: string
   phone: string
-  password: string
-  position?: string
+  whatsapp: string
   job?: string
   role?: UserRole
-  lastRent?: Date
-  numberOfRentals?: number
-
+  password: string
   createdAt?: Date
   updatedAt?: Date
   deletedAt?: Date
 }
 
 export class User extends Entity<Props> {
-  get sportsFacilityId(): string | undefined {
-    return this.props.sportsFacilityId
-  }
-
-  set sportsFacilityId(sportsFacilityId: string | undefined) {
-    this.props.sportsFacilityId = sportsFacilityId
-  }
-
+ 
   get name(): string {
     return this.props.name
   }
 
   set name(name: string) {
     this.props.name = name
+  }
+
+  get surname(): string {
+    return this.props.surname
+  }
+
+  set surname(surname: string) {
+    this.props.surname = surname
   }
 
   get email(): string {
@@ -69,20 +68,12 @@ export class User extends Entity<Props> {
     this.props.phone = phone
   }
 
-  get password(): string {
-    return this.props.password
+  get whatsapp(): string {
+    return this.props.whatsapp
   }
 
-  set password(password: string) {
-    this.props.password = password
-  }
-
-  get position(): string | undefined {
-    return this.props.position
-  }
-
-  set position(position: string | undefined) {
-    this.props.position = position
+  set whatsapp(whatsapp: string) {
+    this.props.whatsapp = whatsapp
   }
 
   get job(): string | undefined {
@@ -101,20 +92,12 @@ export class User extends Entity<Props> {
     this.props.role = role
   }
 
-  get lastRent(): Date | undefined {
-    return this.props.lastRent
+  get password(): string {
+    return this.props.password
   }
 
-  set lastRent(lastRent: Date) {
-    this.props.lastRent = lastRent
-  }
-
-  get numberOfRentals(): number | undefined {
-    return this.props.numberOfRentals
-  }
-
-  set numberOfRentals(numberOfRentals: number) {
-    this.props.numberOfRentals = numberOfRentals
+  set password(password: string) {
+    this.props.password = password
   }
 
   get createdAt(): Date | undefined {

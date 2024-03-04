@@ -2,8 +2,6 @@ import { FastifyReply, FastifyRequest } from 'fastify'
 import { z } from 'zod'
 
 import {
-  zodDateParser,
-  zodNumberParser,
   zodStringParser,
 } from '@core/utils/custom-zod-error'
 
@@ -17,10 +15,8 @@ const paramsSchema = z.object({
 })
 
 const bodySchema = z.object({
-  sports_facility_id: z
-    .string(zodStringParser('centro esportivo'))
-    .uuid({ message: 'O campo centro esportivo deve ser um uuid.' }),
   name: z.string(zodStringParser('nome')),
+  surname: z.string(zodStringParser('nome')),
   email: z
     .string(zodStringParser('e-mail'))
     .email('O e-mail informado é inválido.'),
@@ -29,43 +25,40 @@ const bodySchema = z.object({
     .string(zodStringParser('telefone'))
     .min(13, 'O telefone deve ter 13 caracteres.')
     .max(14, 'O telefone deve ter 14 caracteres.'),
-  position: z.string(zodStringParser('posição')),
+  whatsapp: z
+    .string(zodStringParser('whatsapp'))
+    .min(13, 'O whatsapp deve ter 13 caracteres.')
+    .max(14, 'O whatsapp deve ter 14 caracteres.'),
   job: z.string(zodStringParser('cargo')),
-  role: z.enum(['SECRETARY', 'DIRECTOR', 'DIVISION_HEAD']),
-  last_rent: z.coerce.date(zodDateParser('último aluguel')).optional(),
-  number_of_rentals: z.number(zodNumberParser('número de aluguéis')).optional(),
+  role: z.enum(['CLIENTE_EC']),
 })
 
 export async function saveUser(request: FastifyRequest, reply: FastifyReply) {
   const { id } = paramsSchema.parse(request.params)
 
   const {
-    sports_facility_id: sportsFacilityId,
     name,
+    surname,
     email,
     document,
     phone,
-    position,
+    whatsapp,
     job,
-    role,
-    last_rent: lastRent,
-    number_of_rentals: numberOfRentals,
+    role
   } = bodySchema.parse(request.body)
 
   const saveUserUseCase = makeSaveUserUseCase()
 
   const { user } = await saveUserUseCase.execute({
     id,
-    sportsFacilityId,
     name,
+    surname,
     email,
     document,
     phone,
-    position,
+    whatsapp,
     job,
     role,
-    lastRent,
-    numberOfRentals,
   })
 
   return reply.status(200).send({
