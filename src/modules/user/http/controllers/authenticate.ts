@@ -55,6 +55,6 @@ export async function authenticate(
     })
     .status(200)
     .send({
-      access_token: token,
+      accessToken: token,
     })
 }

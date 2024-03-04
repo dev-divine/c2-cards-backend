@@ -5,10 +5,10 @@ import { deleteECClient } from '@modules/ec-client/http/controllers/delete-ec-cl
 import { listECClients } from '@modules/ec-client/http/controllers/list-ec-clients'
 import { saveECClient } from '@modules/ec-client/http/controllers/save-ec-client'
 
-// import { verifyJwt } from '@infra/http/middlewares/verify-jwt'
+import { verifyJwt } from '@infra/http/middlewares/verify-jwt'
 
 export async function ECClientRoutes(app: FastifyInstance) {
-  // app.addHook('onRequest', verifyJwt)
+  app.addHook('onRequest', verifyJwt)
 
   app.get('/ec-clients', listECClients)
   app.post('/ec-client', createECClient)

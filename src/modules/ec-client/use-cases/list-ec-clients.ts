@@ -1,5 +1,5 @@
-import { ECClient } from '@modules/ec-client/entities/ec-client'
-import { ECClientRepository } from '@modules/ec-client/repositories/ec-client-repository'
+import { EcClient } from '@modules/ec-client/entities/ec-client'
+import { EcClientRepository } from '@modules/ec-client/repositories/ec-client-repository'
 
 interface Input {
   page: number
@@ -7,15 +7,15 @@ interface Input {
 }
 
 interface Output {
-  eCClients: ECClient[] | undefined
+  ecClients: EcClient[] | undefined
   totalPages: number
 }
 
 export class ListECClientsUseCase {
-  constructor(private readonly eCClientRepository: ECClientRepository) {}
+  constructor(private readonly eCClientRepository: EcClientRepository) {}
 
   async execute({ page, perPage }: Input): Promise<Output> {
-    const eCClients = await this.eCClientRepository.listECClients({
+    const ecClients = await this.eCClientRepository.listECClients({
       page,
       perPage,
     })
@@ -23,7 +23,7 @@ export class ListECClientsUseCase {
     const totalPages = await this.eCClientRepository.fetchTotalPages(perPage)
 
     return {
-      eCClients,
+      ecClients,
       totalPages,
     }
   }

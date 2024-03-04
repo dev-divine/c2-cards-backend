@@ -3,7 +3,7 @@ import { z } from 'zod'
 
 import { zodStringParser } from '@core/utils/custom-zod-error'
 
-import { makeDeleteECClientUseCase } from '@modules/ec-client/use-cases/factories/make-delete-ec-client'
+import { makeRemoveECClientUseCase } from '@modules/ec-client/use-cases/factories/make-delete-ec-client'
 
 const paramsSchema = z.object({
   id: z
@@ -17,13 +17,13 @@ export async function deleteECClient(
 ) {
   const { id } = paramsSchema.parse(request.params)
 
-  const deleteECClientUseCase = makeDeleteECClientUseCase()
+  const removeECClientUseCase = makeRemoveECClientUseCase()
 
-  const { success } = await deleteECClientUseCase.execute({
+  const { success } = await removeECClientUseCase.execute({
     id,
   })
 
-  return reply.status(204).send({
+  return reply.status(200).send({
     success,
   })
 }

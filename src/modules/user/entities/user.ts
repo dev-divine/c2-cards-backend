@@ -1,103 +1,106 @@
-/* eslint-disable no-unused-vars */
 import { Entity } from '@core/domain/entities/entity'
 import { UniqueEntityID } from '@core/domain/entities/unique-entity-id'
 import { Optional } from '@core/domain/types/opcional'
 
-export enum UserRole {
-  SECRETARY = 'SECRETARY',
-  DIRECTOR = 'DIRECTOR',
-  DIVISION_HEAD = 'DIVISION_HEAD',
-  USER = 'USER',
-  
+export enum Role {
+  DASHBOARD = 'DASHBOARD',
+  CLIENTE_EC = 'CLIENTE_EC',
+  OPT_IN = 'OPT_IN',
+  RECEBIVEIS = 'RECEBIVEIS',
+  URS = 'URS',
+  ANTECIPACOES = 'ANTECIPACOES',
+  USUARIOS = 'USUARIOS',
+  NOTA_COMERCIAL = 'NOTA_COMERCIAL',
+  SIMULACAO = 'SIMULACAO',
+  ASSINATURAS = 'ASSINATURAS',
 }
 
 interface Props {
   name: string
-  surname: string
-  email: string
   document: string
+  email: string
   phone: string
   whatsapp: string
-  job?: string
-  role?: UserRole
+  job: string
+  role: Role
   password: string
+  accessLevel: string
   createdAt?: Date
   updatedAt?: Date
   deletedAt?: Date
 }
 
 export class User extends Entity<Props> {
- 
   get name(): string {
     return this.props.name
   }
 
-  set name(name: string) {
-    this.props.name = name
-  }
-
-  get surname(): string {
-    return this.props.surname
-  }
-
-  set surname(surname: string) {
-    this.props.surname = surname
-  }
-
-  get email(): string {
-    return this.props.email
-  }
-
-  set email(email: string) {
-    this.props.email = email
+  set name(value: string) {
+    this.props.name = value
   }
 
   get document(): string {
     return this.props.document
   }
 
-  set document(document: string) {
-    this.props.document = document
+  set document(value: string) {
+    this.props.document = value
+  }
+
+  get email(): string {
+    return this.props.email
+  }
+
+  set email(value: string) {
+    this.props.email = value
   }
 
   get phone(): string {
     return this.props.phone
   }
 
-  set phone(phone: string) {
-    this.props.phone = phone
+  set phone(value: string) {
+    this.props.phone = value
   }
 
   get whatsapp(): string {
     return this.props.whatsapp
   }
 
-  set whatsapp(whatsapp: string) {
-    this.props.whatsapp = whatsapp
+  set whatsapp(value: string) {
+    this.props.whatsapp = value
   }
 
-  get job(): string | undefined {
+  get job(): string {
     return this.props.job
   }
 
-  set job(job: string | undefined) {
-    this.props.job = job
+  set job(value: string) {
+    this.props.job = value
   }
 
-  get role(): UserRole | undefined {
+  get role(): Role {
     return this.props.role
   }
 
-  set role(role: UserRole) {
-    this.props.role = role
+  set role(value: Role) {
+    this.props.role = value
   }
 
   get password(): string {
     return this.props.password
   }
 
-  set password(password: string) {
-    this.props.password = password
+  set password(value: string) {
+    this.props.password = value
+  }
+
+  get accessLevel(): string {
+    return this.props.accessLevel
+  }
+
+  set accessLevel(value: string) {
+    this.props.accessLevel = value
   }
 
   get createdAt(): Date | undefined {
@@ -108,30 +111,30 @@ export class User extends Entity<Props> {
     return this.props.updatedAt
   }
 
-  set updatedAt(updatedAt: Date) {
-    this.props.updatedAt = updatedAt
+  set updatedAt(value: Date) {
+    this.props.updatedAt = value
   }
 
   get deletedAt(): Date | undefined {
     return this.props.deletedAt
   }
 
-  set deletedAt(deletedAt: Date) {
-    this.props.deletedAt = deletedAt
+  set deletedAt(value: Date) {
+    this.props.deletedAt = value
   }
 
   static create(
-    props: Optional<Props, 'createdAt'>,
+    props: Optional<Props, 'accessLevel' | 'createdAt' | 'updatedAt'>,
     id?: UniqueEntityID,
   ): User {
-    const user = new User(
+    return new User(
       {
         ...props,
+        accessLevel: props.accessLevel ?? 'Agente financeiro',
         createdAt: props.createdAt ?? new Date(),
+        updatedAt: props.updatedAt ?? new Date(),
       },
       id,
     )
-
-    return user
   }
 }

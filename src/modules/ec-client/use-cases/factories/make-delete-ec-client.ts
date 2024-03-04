@@ -1,9 +1,9 @@
 import { PrismaECClientRepository } from '@modules/ec-client/repositories/prisma/repositories/ec-client-repository'
 
-import { DeleteECClientUseCase } from '@modules/ec-client/use-cases/delete-ec-client'
+import { RemoveECClientUseCase } from '@modules/ec-client/use-cases/remove-ec-client'
 
-export function makeDeleteECClientUseCase() {
+export function makeRemoveECClientUseCase() {
   const eCClientRepository = new PrismaECClientRepository()
 
-  return new DeleteECClientUseCase(eCClientRepository)
+  return new RemoveECClientUseCase(eCClientRepository)
 }

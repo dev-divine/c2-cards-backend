@@ -1,4 +1,4 @@
-import { ECClientRepository } from '@modules/ec-client/repositories/ec-client-repository'
+import { EcClientRepository } from '@modules/ec-client/repositories/ec-client-repository'
 import { OptInRepository } from '@modules/opt/repositories/opt-in-repository'
 import { URRepository } from '@modules/ur/repositories/ur-repository'
 
@@ -10,7 +10,7 @@ interface Output {
 
 export class CountItemsUseCase {
   constructor(
-    private readonly eCClientRepository: ECClientRepository,
+    private readonly eCClientRepository: EcClientRepository,
     private readonly optInRepository: OptInRepository,
     private readonly uRRepository: URRepository,
   ) {}

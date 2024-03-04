@@ -2,24 +2,24 @@ import { User as RawUser } from '@prisma/client'
 
 import { UniqueEntityID } from '@core/domain/entities/unique-entity-id'
 
-import { User, UserRole } from '@modules/user/entities/user'
+import { Role, User } from '@modules/user/entities/user'
 
 export class PrismaUserMapper {
   static toPrisma(user: User) {
     return {
       id: user.id,
       name: user.name,
-      surname: user.surname,
-      email: user.email,
       document: user.document,
+      email: user.email,
       phone: user.phone,
       whatsapp: user.whatsapp,
       job: user.job,
       role: user.role,
       password: user.password,
-      created_at: user.createdAt,
-      updated_at: user.updatedAt,
-      deleted_at: user.deletedAt,
+      accessLevel: user.accessLevel,
+      createdAt: user.createdAt,
+      updatedAt: user.updatedAt,
+      deletedAt: user.deletedAt,
     }
   }
 
@@ -27,17 +27,16 @@ export class PrismaUserMapper {
     return User.create(
       {
         name: raw.name,
-        surname: raw.surname,
-        email: raw.email,
         document: raw.document,
+        email: raw.email,
         phone: raw.phone,
         whatsapp: raw.whatsapp,
-        job: raw.job ?? undefined,
-        role: raw.role as UserRole,
+        job: raw.job,
+        role: raw.role as Role,
         password: raw.password,
-        createdAt: raw.created_at,
-        updatedAt: raw.updated_at,
-        deletedAt: raw.deleted_at ?? undefined,
+        createdAt: raw.createdAt,
+        updatedAt: raw.updatedAt,
+        deletedAt: raw.deletedAt ?? undefined,
       },
       new UniqueEntityID(raw.id),
     )

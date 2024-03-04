@@ -1,19 +1,19 @@
 import { AppError } from '@core/domain/errors/app-error'
 
-import { User, UserRole } from '@modules/user/entities/user'
+import { Role, User } from '@modules/user/entities/user'
 import { UserRepository } from '@modules/user/repositories/user-repository'
 
 import { Hash } from '@infra/providers/hash/hash'
 
 interface Input {
   name: string
-  surname: string
-  email: string
   document: string
+  email: string
   phone: string
   whatsapp: string
-  job?: string
-  role?: UserRole
+  job: string
+  role: Role
+  accessLevel: string
   password: string
 }
 
@@ -29,63 +29,61 @@ export class CreateUserUseCase {
 
   async execute({
     name,
-    surname,
-    email,
     document,
+    email,
     phone,
     whatsapp,
     job,
+    role,
+    accessLevel,
     password,
   }: Input): Promise<Output> {
-    const emailAlreadyExists = await this.userRepository.findByEmail(email)
-    if (emailAlreadyExists) {
+    const documentAlready = await this.userRepository.findByDocument(document)
+    if (documentAlready) {
+      throw new AppError({
+        code: 'user.document_already_exists',
+      })
+    }
+
+    const emailAlready = await this.userRepository.findByEmail(email)
+    if (emailAlready) {
       throw new AppError({
         code: 'user.email_already_exists',
       })
     }
-    console.log('validou email')
 
-    const cpfAlreadyExists = await this.userRepository.findByDocument(document)
-    if (cpfAlreadyExists) {
-      throw new AppError({
-        code: 'user.cpf_already_exists',
-      })
-    }
-    console.log('validou cpf')
-
-    const phoneAlreadyExists = await this.userRepository.findByPhone(phone)
-    if (phoneAlreadyExists) {
+    const phoneAlready = await this.userRepository.findByPhone(phone)
+    if (phoneAlready) {
       throw new AppError({
         code: 'user.phone_already_exists',
       })
     }
-    //console.log('validou phone')
-    //console.log(password)
-    try {
-      const passwordHashed = await this.hash.generate(password)
-      //Aqui pego o a senha hasheada
-      //console.log("Senha",passwordHashed)
-      const user = User.create({
-        name,
-        surname,
-        email,
-        document,
-        phone,
-        whatsapp,
-        job,
-        role: UserRole.USER,
-        password: passwordHashed ?? 's',
-      })
-      console.log(user)
-      await this.userRepository.create(user)
 
-      return {
-        user,
-      }
-    } catch (error) {
+    const whatsappAlready = await this.userRepository.findByWhatsapp(whatsapp)
+    if (whatsappAlready) {
       throw new AppError({
-        code: 'internal',
+        code: 'user.whatsapp_already_exists',
       })
+    }
+
+    const passwordHashed = await this.hash.generate(password)
+
+    const user = User.create({
+      name,
+      document,
+      email,
+      phone,
+      whatsapp,
+      job,
+      role: Role[role],
+      accessLevel,
+      password: passwordHashed,
+    })
+
+    await this.userRepository.create(user)
+
+    return {
+      user,
     }
   }
 }

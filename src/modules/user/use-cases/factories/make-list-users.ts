@@ -4,6 +4,6 @@ import { ListUsersUseCase } from '@modules/user/use-cases/list-users'
 
 export function makeListUsersUseCase() {
   const userRepository = new PrismaUserRepository()
- 
-  return new ListUsersUseCase(userRepository, null) // Replace `null` with the appropriate second argument
+
+  return new ListUsersUseCase(userRepository)
 }

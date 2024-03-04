@@ -1,21 +1,19 @@
 import { UniqueEntityID } from '@core/domain/entities/unique-entity-id'
 import { AppError } from '@core/domain/errors/app-error'
 
-import { User, UserRole } from '@modules/user/entities/user'
+import { Role, User } from '@modules/user/entities/user'
 import { UserRepository } from '@modules/user/repositories/user-repository'
 
 interface Input {
   id: string
-  sportsFacilityId: string
   name: string
-  email: string
   document: string
+  email: string
   phone: string
-  position: string
+  whatsapp: string
   job: string
-  role: 'SECRETARY' | 'DIRECTOR' | 'DIVISION_HEAD'
-  lastRent?: Date
-  numberOfRentals?: number
+  role: Role
+  accessLevel: string
 }
 
 interface Output {
@@ -27,16 +25,14 @@ export class SaveUserUseCase {
 
   async execute({
     id,
-    sportsFacilityId,
     name,
-    email,
     document,
+    email,
     phone,
-    position,
+    whatsapp,
     job,
     role,
-    lastRent,
-    numberOfRentals,
+    accessLevel,
   }: Input): Promise<Output> {
     const userToUpdate = await this.userRepository.findById(id)
     if (!userToUpdate) {
@@ -44,40 +40,58 @@ export class SaveUserUseCase {
         code: 'user.user_not_found',
       })
     }
-    const emailAlreadyExists = await this.userRepository.findByEmail(email)
-    if (emailAlreadyExists?.email !== email && emailAlreadyExists) {
+
+    const documentExists =
+      document !== userToUpdate.document
+        ? await this.userRepository.findByDocument(document)
+        : null
+    if (documentExists) {
+      throw new AppError({
+        code: 'user.document_already_exists',
+      })
+    }
+
+    const emailExists =
+      email !== userToUpdate.email
+        ? await this.userRepository.findByEmail(email)
+        : null
+    if (emailExists) {
       throw new AppError({
         code: 'user.email_already_exists',
       })
     }
 
-    const cpfAlreadyExists = await this.userRepository.findByDocument(document)
-    if (cpfAlreadyExists?.document !== document && cpfAlreadyExists) {
-      throw new AppError({
-        code: 'user.cpf_already_exists',
-      })
-    }
-
-    const phoneAlreadyExists = await this.userRepository.findByPhone(phone)
-    if (phoneAlreadyExists && phoneAlreadyExists.phone !== phone) {
+    const phoneExists =
+      phone !== userToUpdate.phone
+        ? await this.userRepository.findByPhone(phone)
+        : null
+    if (phoneExists) {
       throw new AppError({
         code: 'user.phone_already_exists',
       })
     }
 
+    const whatsappExists =
+      whatsapp !== userToUpdate.whatsapp
+        ? await this.userRepository.findByWhatsapp(whatsapp)
+        : null
+    if (whatsappExists) {
+      throw new AppError({
+        code: 'user.whatsapp_already_exists',
+      })
+    }
+
     const user = User.create(
       {
-        sportsFacilityId,
-        name,
-        email,
-        document,
-        phone,
-        job,
+        name: name ?? userToUpdate.name,
+        document: document ?? userToUpdate.document,
+        email: email ?? userToUpdate.email,
+        phone: phone ?? userToUpdate.phone,
+        whatsapp: whatsapp ?? userToUpdate.whatsapp,
+        job: job ?? userToUpdate.job,
+        role: Role[role] ?? userToUpdate.role,
+        accessLevel: accessLevel ?? userToUpdate.accessLevel,
         password: userToUpdate.password,
-        position,
-        role: UserRole[role],
-        lastRent,
-        numberOfRentals,
       },
       new UniqueEntityID(id),
     )

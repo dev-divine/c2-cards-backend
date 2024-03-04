@@ -4,8 +4,10 @@ import { User } from '@modules/user/entities/user'
 import { PrismaUserMapper } from '@modules/user/repositories/prisma/mappers/prisma-user-mapper'
 import { UserRepository } from '@modules/user/repositories/user-repository'
 
+import { AppError } from '@core/domain/errors/app-error'
 import { prisma } from '@infra/database/prisma'
-import { PaginationDTO } from '@modules/citizen/dtos/pagination-dto'
+import { PaginationDTO } from '@modules/user/dtos/pagination-dto'
+import { PrismaClientKnownRequestError } from '@prisma/client/runtime/library'
 
 export class PrismaUserRepository implements UserRepository {
   private repository: PrismaClient
@@ -18,20 +20,6 @@ export class PrismaUserRepository implements UserRepository {
     const user = await this.repository.user.findUnique({
       where: {
         id: userId,
-      },
-    })
-
-    if (!user) {
-      return
-    }
-
-    return PrismaUserMapper.toDomain(user)
-  }
-
-  async findByEmail(email: string): Promise<User | undefined> {
-    const user = await this.repository.user.findUnique({
-      where: {
-        email,
       },
     })
 
@@ -56,10 +44,38 @@ export class PrismaUserRepository implements UserRepository {
     return PrismaUserMapper.toDomain(user)
   }
 
+  async findByEmail(email: string): Promise<User | undefined> {
+    const user = await this.repository.user.findUnique({
+      where: {
+        email,
+      },
+    })
+
+    if (!user) {
+      return
+    }
+
+    return PrismaUserMapper.toDomain(user)
+  }
+
   async findByPhone(phone: string): Promise<User | undefined> {
     const user = await this.repository.user.findUnique({
       where: {
         phone,
+      },
+    })
+
+    if (!user) {
+      return
+    }
+
+    return PrismaUserMapper.toDomain(user)
+  }
+
+  async findByWhatsapp(whatsapp: string): Promise<User | undefined> {
+    const user = await this.repository.user.findUnique({
+      where: {
+        whatsapp,
       },
     })
 
@@ -80,7 +96,7 @@ export class PrismaUserRepository implements UserRepository {
       skip,
       take: perPage,
       orderBy: {
-        updated_at: 'desc',
+        updatedAt: 'desc',
       },
     })
 
@@ -92,7 +108,7 @@ export class PrismaUserRepository implements UserRepository {
   }
 
   async getTotalPages(perPage: number): Promise<number> {
-    const totalItems = await this.repository.athlete.count()
+    const totalItems = await this.repository.user.count()
 
     return Math.ceil(totalItems / perPage)
   }
@@ -120,11 +136,26 @@ export class PrismaUserRepository implements UserRepository {
     return PrismaUserMapper.toDomain(updatedUser)
   }
 
-  async remove(id: string): Promise<void> {
-    await this.repository.athlete.delete({
-      where: {
-        id,
-      },
-    })
+  async remove(userId: string): Promise<boolean> {
+    try {
+      await this.repository.ecClient.delete({
+        where: {
+          id: userId,
+        },
+      })
+
+      return true
+    } catch (error: unknown) {
+      if (error instanceof PrismaClientKnownRequestError) {
+        if (error.code === 'P2025') {
+          throw new AppError({
+            code: 'prisma.user_not_found',
+          })
+        }
+      }
+      throw new AppError({
+        code: 'internal',
+      })
+    }
   }
 }

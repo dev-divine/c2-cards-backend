@@ -21,22 +21,16 @@ export class AuthenticateUseCase {
   ) {}
 
   async execute({ document, password }: Input): Promise<Output> {
-    if (!document) {
-      throw new AppError({
-        code: 'auth.invalid_credentials',
-      })
-    }
-
-    if (!password) {
-      throw new AppError({
-        code: 'auth.invalid_credentials',
-      })
-    }
-
     const user = await this.userRepository.findByDocument(document)
     if (!user) {
       throw new AppError({
-        code: 'user.user_not_found',
+        code: 'auth.invalid_credentials',
+      })
+    }
+
+    if (!user.password) {
+      throw new AppError({
+        code: 'auth.invalid_credentials',
       })
     }
 
@@ -46,6 +40,8 @@ export class AuthenticateUseCase {
         code: 'auth.invalid_credentials',
       })
     }
+
+    await this.userRepository.save(user)
 
     return {
       user,

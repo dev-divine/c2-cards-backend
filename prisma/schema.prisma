@@ -43,56 +43,50 @@ enum Roles {
 }
 
 model User {
-  id                 String @id @default(uuid())
-  name               String
-  surname            String
-  email              String @unique
-  document           String @unique
-  phone              String @unique
-  whatsapp           String @unique
-  job                String
-  role               Roles  @default(CLIENTE_EC)
-  password           String
-
-  created_at DateTime  @default(now())
-  updated_at DateTime  @updatedAt
-  deleted_at DateTime?
-
-  ecClients ECClient[]
+  id          String    @id @default(uuid())
+  name        String
+  document    String    @unique
+  email       String    @unique
+  phone       String    @unique
+  whatsapp    String    @unique
+  accessLevel String
+  job         String
+  role        Roles     @default(CLIENTE_EC)
+  password    String
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  deletedAt   DateTime?
 
   @@map("users")
 }
 
-model ECClient {
-  id                   String  @id @default(uuid())
-  user_id              String?
-  company_name         String  @unique
-  company_document     String  @unique
-  company_email        String  @unique
-  company_phone        String  @unique
-  company_zip_code     String
-  company_state        String
-  company_city         String
-  company_street       String
-  company_number       String
-  company_complement   String?
-  responsible_name     String
-  responsible_document String  @unique
-  responsible_email    String  @unique
-  responsible_whatsapp String  @unique
-  zip_code             String
-  state                String
-  city                 String
-  street               String
-  number               String
-  complement           String?
-  profile              String? @default("Cliente E.C.")
-
-  created_at DateTime  @default(now())
-  updated_at DateTime  @updatedAt
-  deleted_at DateTime?
-
-  user User? @relation(fields: [user_id], references: [id])
+model EcClient {
+  id                      String  @id @default(uuid())
+  companyName             String
+  companyDocument         String
+  companyPhone            String
+  companyEmail            String
+  companyZipCode          String
+  companyState            String
+  companyCity             String
+  companyNeighborhood     String
+  companyStreet           String
+  companyNumber           String
+  companyComplement       String?
+  responsibleName         String?
+  responsibleEmail        String?
+  responsiblePhone        String?
+  responsibleDocument     String?
+  responsibleZipCode      String?
+  responsibleState        String?
+  responsibleCity         String?
+  responsibleNeighborhood String?
+  responsibleStreet       String?
+  responsibleNumber       String?
+  responsibleComplement   String?
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
 
   @@map("ec_clients")
 }
@@ -289,7 +283,7 @@ model EfeitoContrato {
   tipoOnus               String?
   dataVencimentoEfeito   DateTime
   regraDivisao           String
-  liquidacaoId           String @unique
+  liquidacaoId           String     @unique
   liquidacao             Liquidacao @relation(fields: [liquidacaoId], references: [id])
 }
 

@@ -1,7 +1,7 @@
-import fastifyCookie from '@fastify/cookie'
-import fastifyCors from '@fastify/cors'
-import fastifyJwt from '@fastify/jwt'
 import fastify from 'fastify'
+import cors from '@fastify/cors'
+import cookies from '@fastify/cookie'
+import fastifyJwt from '@fastify/jwt'
 import { ZodError } from 'zod'
 
 import { AppError } from '@core/domain/errors/app-error'
@@ -11,15 +11,14 @@ import { ECClientRoutes } from '@modules/ec-client/http/routes'
 import { OptRoutes } from '@modules/opt/http/routes'
 import { ContractRoutes } from '@modules/contract/http/routes'
 import { URRoutes } from '@modules/ur/http/routes'
-// import { ScheduleRoutes } from '@modules/schedule/http/routes'
 
 import { env } from '@infra/env'
-import { User } from '@modules/user/entities/user'
 import { UserRoutes } from '@modules/user/http/routes'
 
 export const app = fastify()
 
-app.register(fastifyCors)
+app.register(cors)
+app.register(cookies)
 
 app.register(fastifyJwt, {
   secret: env.JWT_SECRET,
@@ -32,15 +31,12 @@ app.register(fastifyJwt, {
   },
 })
 
-app.register(fastifyCookie)
-
+app.register(UserRoutes)
 app.register(DashboardRoutes)
 app.register(ECClientRoutes)
 app.register(OptRoutes)
 app.register(ContractRoutes)
 app.register(URRoutes)
-app.register(UserRoutes)
-// app.register(ScheduleRoutes)
 
 app.setErrorHandler((error, req, reply) => {
   if (error instanceof ZodError) {

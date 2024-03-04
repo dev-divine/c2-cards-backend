@@ -3,8 +3,8 @@ import { z } from 'zod'
 
 import { zodStringParser } from '@core/utils/custom-zod-error'
 
+import { EcClientViewModel } from '@modules/ec-client/http/view-models/ec-client-view-model'
 import { makeSaveECClientUseCase } from '@modules/ec-client/use-cases/factories/make-save-ec-client'
-import { ECClientViewModel } from '@modules/ec-client/http/view-models/ec-client-view-model'
 
 const paramsSchema = z.object({
   id: z
@@ -13,53 +13,51 @@ const paramsSchema = z.object({
 })
 
 const bodySchema = z.object({
-  company_name: z.string(zodStringParser('nome da empresa')),
-  company_document: z
+  companyName: z.string(zodStringParser('nome da empresa')),
+  companyDocument: z
     .string(zodStringParser('CPF/CNPJ'))
     .min(11, 'O CPF deve ter 11 caracteres.')
     .max(14, 'O CNPJ deve ter 14 caracteres.'),
-  company_phone: z
+  companyPhone: z
     .string(zodStringParser('telefone'))
     .min(1, 'O telefone é obrigatório.'),
-  company_email: z
+  companyEmail: z
     .string(zodStringParser('e-mail'))
     .email('O e-mail informado é inválido.'),
-  company_zip_code: z.string(zodStringParser('CEP')),
-  company_state: z.string(zodStringParser('estado')),
-  company_city: z.string(zodStringParser('cidade')),
-  company_neighborhood: z.string(zodStringParser('bairro')),
-  company_street: z.string(zodStringParser('rua')),
-  company_number: z.string(zodStringParser('número')),
-  company_complement: z.string(zodStringParser('complemento')).optional(),
-  responsible_name: z.string(zodStringParser('nome do responsável')),
-  responsible_email: z
+  companyZipCode: z.string(zodStringParser('CEP')),
+  companyState: z.string(zodStringParser('estado')),
+  companyCity: z.string(zodStringParser('cidade')),
+  companyNeighborhood: z.string(zodStringParser('bairro')),
+  companyStreet: z.string(zodStringParser('rua')),
+  companyNumber: z.string(zodStringParser('número')),
+  companyComplement: z.string(zodStringParser('complemento')).optional(),
+  responsibleName: z.string(zodStringParser('nome do responsável')),
+  responsibleEmail: z
     .string(zodStringParser('e-mail do responsável'))
     .email('O e-mail do responsável informado é inválido.'),
-  responsible_phone: z
+  responsiblePhone: z
     .string(zodStringParser('telefone do responsável'))
     .min(1, 'O telefone é obrigatório.'),
-  responsible_document: z
+  responsibleDocument: z
     .string(zodStringParser('CPF do responsável'))
     .transform((cpf) => cpf.replace(/\D/g, '')),
-  responsible_zip_code: z
+  responsibleZipCode: z
     .string(zodStringParser('CEP do responsável'))
     .optional(),
-  responsible_state: z
+  responsibleState: z
     .string(zodStringParser('estado do responsável'))
     .optional(),
-  responsible_city: z
+  responsibleCity: z
     .string(zodStringParser('cidade do responsável'))
     .optional(),
-  responsible_neighborhood: z
+  responsibleNeighborhood: z
     .string(zodStringParser('bairro do responsável'))
     .optional(),
-  responsible_street: z
-    .string(zodStringParser('rua do responsável'))
-    .optional(),
-  responsible_number: z
+  responsibleStreet: z.string(zodStringParser('rua do responsável')).optional(),
+  responsibleNumber: z
     .string(zodStringParser('número do responsável'))
     .optional(),
-  responsible_complement: z
+  responsibleComplement: z
     .string(zodStringParser('complemento do responsável'))
     .optional(),
 })
@@ -71,33 +69,33 @@ export async function saveECClient(
   const { id } = paramsSchema.parse(request.params)
 
   const {
-    company_name: companyName,
-    company_document: companyDocument,
-    company_phone: companyPhone,
-    company_email: companyEmail,
-    company_zip_code: companyZipCode,
-    company_state: companyState,
-    company_city: companyCity,
-    company_neighborhood: companyNeighborhood,
-    company_street: companyStreet,
-    company_number: companyNumber,
-    company_complement: companyComplement,
-    responsible_name: responsibleName,
-    responsible_email: responsibleEmail,
-    responsible_phone: responsiblePhone,
-    responsible_document: responsibleDocument,
-    responsible_zip_code: responsibleZipCode,
-    responsible_state: responsibleState,
-    responsible_city: responsibleCity,
-    responsible_neighborhood: responsibleNeighborhood,
-    responsible_street: responsibleStreet,
-    responsible_number: responsibleNumber,
-    responsible_complement: responsibleComplement,
+    companyName,
+    companyDocument,
+    companyPhone,
+    companyEmail,
+    companyZipCode,
+    companyState,
+    companyCity,
+    companyNeighborhood,
+    companyStreet,
+    companyNumber,
+    companyComplement,
+    responsibleName,
+    responsibleEmail,
+    responsiblePhone,
+    responsibleDocument,
+    responsibleZipCode,
+    responsibleState,
+    responsibleCity,
+    responsibleNeighborhood,
+    responsibleStreet,
+    responsibleNumber,
+    responsibleComplement,
   } = bodySchema.parse(request.body)
 
   const saveECClientUseCase = makeSaveECClientUseCase()
 
-  const { eCClient } = await saveECClientUseCase.execute({
+  const { ecClient } = await saveECClientUseCase.execute({
     id,
     companyName,
     companyDocument,
@@ -124,6 +122,6 @@ export async function saveECClient(
   })
 
   return reply.status(200).send({
-    eCClient: eCClient ? ECClientViewModel.toHTTP(eCClient) : undefined,
+    ecClient: ecClient ? EcClientViewModel.toHTTP(ecClient) : undefined,
   })
 }

@@ -1,113 +1,120 @@
 import { AppError } from '@core/domain/errors/app-error'
 
-import { ECClient } from '@modules/ec-client/entities/ec-client'
-import { ECClientRepository } from '@modules/ec-client/repositories/ec-client-repository'
+import { EcClient } from '@modules/ec-client/entities/ec-client'
+import { EcClientRepository } from '@modules/ec-client/repositories/ec-client-repository'
 
 interface Input {
   companyName: string
   companyDocument: string
-  companyEmail: string
   companyPhone: string
+  companyEmail: string
   companyZipCode: string
   companyState: string
   companyCity: string
+  companyNeighborhood: string
   companyStreet: string
   companyNumber: string
   companyComplement?: string
   responsibleName: string
-  responsibleDocument: string
   responsibleEmail: string
-  responsibleWhatsapp: string
-  zipCode: string
-  state: string
-  city: string
-  street: string
-  number: string
-  complement?: string
+  responsiblePhone: string
+  responsibleDocument: string
+  responsibleZipCode?: string
+  responsibleState?: string
+  responsibleCity?: string
+  responsibleNeighborhood?: string
+  responsibleStreet?: string
+  responsibleNumber?: string
+  responsibleComplement?: string
 }
 
 interface Output {
-  eCClient: ECClient | undefined
+  ecClient: EcClient | undefined
 }
 
 export class CreateECClientUseCase {
-  constructor(private readonly eCClientRepository: ECClientRepository) {}
+  constructor(private readonly eCClientRepository: EcClientRepository) {}
 
   async execute({
     companyName,
     companyDocument,
-    companyEmail,
     companyPhone,
+    companyEmail,
     companyZipCode,
     companyState,
     companyCity,
+    companyNeighborhood,
     companyStreet,
     companyNumber,
     companyComplement,
     responsibleName,
-    responsibleDocument,
     responsibleEmail,
-    responsibleWhatsapp,
-    zipCode,
-    state,
-    city,
-    street,
-    number,
-    complement,
+    responsibleDocument,
+    responsibleZipCode,
+    responsibleState,
+    responsibleCity,
+    responsibleNeighborhood,
+    responsibleStreet,
+    responsibleNumber,
+    responsibleComplement,
   }: Input): Promise<Output> {
-    const ecClient =
+    const nameExists = await this.eCClientRepository.findByName(companyName)
+    if (nameExists) {
+      throw new AppError({
+        code: 'ec_client.name_already_exists',
+      })
+    }
+
+    const documentExists =
       await this.eCClientRepository.findByDocument(companyDocument)
-    if (!ecClient) {
+    if (documentExists) {
       throw new AppError({
-        code: 'EC_CLIENT.not_found',
+        code: 'ec_client.document_already_exists',
       })
     }
 
-    if (ecClient.companyDocument === companyDocument) {
+    const emailExists = await this.eCClientRepository.findByEmail(companyEmail)
+    if (emailExists) {
       throw new AppError({
-        code: 'EC_CLIENT.cnpj_alredy_exists',
+        code: 'ec_client.email_already_exists',
       })
     }
 
-    if (ecClient.companyEmail === companyEmail) {
+    const phoneExists = await this.eCClientRepository.findByPhone(companyPhone)
+    if (phoneExists) {
       throw new AppError({
-        code: 'EC_CLIENT.company_email_already_exists',
+        code: 'ec_client.phone_already_exists',
       })
     }
 
-    if (ecClient.companyPhone === companyPhone) {
-      throw new AppError({
-        code: 'EC_CLIENT.company_phone_already_exists',
-      })
-    }
-
-    const eCClient = ECClient.create({
+    const ecClient = EcClient.create({
       companyName,
       companyDocument,
-      companyEmail,
       companyPhone,
+      companyEmail,
       companyZipCode,
       companyState,
       companyCity,
+      companyNeighborhood,
       companyStreet,
       companyNumber,
       companyComplement: companyComplement ?? 'Não informado',
       responsibleName,
-      responsibleDocument,
       responsibleEmail,
-      responsibleWhatsapp,
-      zipCode,
-      state,
-      city,
-      street,
-      number,
-      complement: complement ?? 'Não informado',
+      responsibleDocument,
+      responsibleZipCode,
+      responsibleState,
+      responsibleCity,
+      responsibleNeighborhood,
+      responsibleStreet,
+      responsibleNumber,
+      responsibleComplement: responsibleComplement ?? 'Não informado',
     })
 
-    await this.eCClientRepository.create(eCClient)
+    await this.eCClientRepository.create(ecClient)
 
     return {
-      eCClient,
+      ecClient,
     }
   }
 }

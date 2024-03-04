@@ -2,43 +2,35 @@ import { Entity } from '@core/domain/entities/entity'
 import { UniqueEntityID } from '@core/domain/entities/unique-entity-id'
 import { Optional } from '@core/domain/types/opcional'
 
-interface ECClientProps {
-  userId?: string
+interface Props {
   companyName: string
   companyDocument: string
-  companyEmail: string
   companyPhone: string
+  companyEmail: string
   companyZipCode: string
   companyState: string
   companyCity: string
+  companyNeighborhood: string
   companyStreet: string
   companyNumber: string
   companyComplement?: string
-  responsibleName: string
-  responsibleDocument: string
-  responsibleEmail: string
-  responsibleWhatsapp: string
-  zipCode: string
-  state: string
-  city: string
-  street: string
-  number: string
-  complement?: string
-  profile?: string
+  responsibleName?: string
+  responsibleEmail?: string
+  responsiblePhone?: string
+  responsibleDocument?: string
+  responsibleZipCode?: string
+  responsibleState?: string
+  responsibleCity?: string
+  responsibleNeighborhood?: string
+  responsibleStreet?: string
+  responsibleNumber?: string
+  responsibleComplement?: string
   createdAt?: Date
   updatedAt?: Date
   deletedAt?: Date
 }
 
-export class ECClient extends Entity<ECClientProps> {
-  get userId(): string | undefined {
-    return this.props.userId
-  }
-
-  set userId(value: string | undefined) {
-    this.props.userId = value
-  }
-
+export class EcClient extends Entity<Props> {
   get companyName(): string {
     return this.props.companyName
   }
@@ -55,20 +47,20 @@ export class ECClient extends Entity<ECClientProps> {
     this.props.companyDocument = value
   }
 
-  get companyEmail(): string {
-    return this.props.companyEmail
-  }
-
-  set companyEmail(value: string) {
-    this.props.companyEmail = value
-  }
-
   get companyPhone(): string {
     return this.props.companyPhone
   }
 
   set companyPhone(value: string) {
     this.props.companyPhone = value
+  }
+
+  get companyEmail(): string {
+    return this.props.companyEmail
+  }
+
+  set companyEmail(value: string) {
+    this.props.companyEmail = value
   }
 
   get companyZipCode(): string {
@@ -95,6 +87,14 @@ export class ECClient extends Entity<ECClientProps> {
     this.props.companyCity = value
   }
 
+  get companyNeighborhood(): string {
+    return this.props.companyNeighborhood
+  }
+
+  set companyNeighborhood(value: string) {
+    this.props.companyNeighborhood = value
+  }
+
   get companyStreet(): string {
     return this.props.companyStreet
   }
@@ -119,92 +119,92 @@ export class ECClient extends Entity<ECClientProps> {
     this.props.companyComplement = value
   }
 
-  get responsibleName(): string {
+  get responsibleName(): string | undefined {
     return this.props.responsibleName
   }
 
-  set responsibleName(value: string) {
+  set responsibleName(value: string | undefined) {
     this.props.responsibleName = value
   }
 
-  get responsibleDocument(): string {
-    return this.props.responsibleDocument
-  }
-
-  set responsibleDocument(value: string) {
-    this.props.responsibleDocument = value
-  }
-
-  get responsibleEmail(): string {
+  get responsibleEmail(): string | undefined {
     return this.props.responsibleEmail
   }
 
-  set responsibleEmail(value: string) {
+  set responsibleEmail(value: string | undefined) {
     this.props.responsibleEmail = value
   }
 
-  get responsibleWhatsapp(): string {
-    return this.props.responsibleWhatsapp
+  get responsiblePhone(): string | undefined {
+    return this.props.responsiblePhone
   }
 
-  set responsibleWhatsapp(value: string) {
-    this.props.responsibleWhatsapp = value
+  set responsiblePhone(value: string | undefined) {
+    this.props.responsiblePhone = value
   }
 
-  get zipCode(): string {
-    return this.props.zipCode
+  get responsibleDocument(): string | undefined {
+    return this.props.responsibleDocument
   }
 
-  set zipCode(value: string) {
-    this.props.zipCode = value
+  set responsibleDocument(value: string | undefined) {
+    this.props.responsibleDocument = value
   }
 
-  get state(): string {
-    return this.props.state
+  get responsibleZipCode(): string | undefined {
+    return this.props.responsibleZipCode
   }
 
-  set state(value: string) {
-    this.props.state = value
+  set responsibleZipCode(value: string | undefined) {
+    this.props.responsibleZipCode = value
   }
 
-  get city(): string {
-    return this.props.city
+  get responsibleState(): string | undefined {
+    return this.props.responsibleState
   }
 
-  set city(value: string) {
-    this.props.city = value
+  set responsibleState(value: string | undefined) {
+    this.props.responsibleState = value
   }
 
-  get street(): string {
-    return this.props.street
+  get responsibleCity(): string | undefined {
+    return this.props.responsibleCity
   }
 
-  set street(value: string) {
-    this.props.street = value
+  set responsibleCity(value: string | undefined) {
+    this.props.responsibleCity = value
   }
 
-  get number(): string {
-    return this.props.number
+  get responsibleNeighborhood(): string | undefined {
+    return this.props.responsibleNeighborhood
   }
 
-  set number(value: string) {
-    this.props.number = value
+  set responsibleNeighborhood(value: string | undefined) {
+    this.props.responsibleNeighborhood = value
   }
 
-  get complement(): string | undefined {
-    return this.props.complement
+  get responsibleStreet(): string | undefined {
+    return this.props.responsibleStreet
   }
 
-  set complement(value: string | undefined) {
-    this.props.complement = value
+  set responsibleStreet(value: string | undefined) {
+    this.props.responsibleStreet = value
   }
 
-  get profile(): string | undefined {
-    return this.props.profile
+  get responsibleNumber(): string | undefined {
+    return this.props.responsibleNumber
   }
 
-  set profile(value: string | undefined) {
-    this.props.profile = value
+  set responsibleNumber(value: string | undefined) {
+    this.props.responsibleNumber = value
+  }
+
+  get responsibleComplement(): string | undefined {
+    return this.props.responsibleComplement
+  }
+
+  set responsibleComplement(value: string | undefined) {
+    this.props.responsibleComplement = value
   }
 
   get createdAt(): Date | undefined {
@@ -219,7 +219,7 @@ export class ECClient extends Entity<ECClientProps> {
     return this.props.updatedAt
   }
 
-  set updatedAt(value: Date) {
+  set updatedAt(value: Date | undefined) {
     this.props.updatedAt = value
   }
 
@@ -232,14 +232,14 @@ export class ECClient extends Entity<ECClientProps> {
   }
 
   static create(
-    props: Optional<ECClientProps, 'createdAt' | 'profile'>,
+    props: Optional<Props, 'createdAt' | 'updatedAt'>,
     id?: UniqueEntityID,
-  ): ECClient {
-    return new ECClient(
+  ): EcClient {
+    return new EcClient(
       {
         ...props,
         createdAt: props.createdAt ?? new Date(),
-        profile: props.profile ?? 'Cliente E.C.',
+        updatedAt: props.updatedAt ?? new Date(),
       },
       id,
     )
