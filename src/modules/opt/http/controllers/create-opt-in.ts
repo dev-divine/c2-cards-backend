@@ -5,30 +5,31 @@ import { z } from 'zod'
 import { zodStringParser } from '@core/utils/custom-zod-error'
 
 import { makeCreateOptInUseCase } from '@modules/opt/use-cases/factories/make-create-opt-in'
+import { OptInViewModel } from '@modules/opt/http/view-models/opt-in-view-model'
 
 const bodySchema = z.object({
-  company_name: z.string(zodStringParser('nome da empresa')),
-  company_document: z
+  companyName: z.string(zodStringParser('nome da empresa')),
+  companyDocument: z
     .string(zodStringParser('CPF/CNPJ'))
     .min(11, 'O CPF deve ter 11 caracteres.')
     .max(14, 'O CNPJ deve ter 14 caracteres.'),
-  financial_agent_document: z
+  financialAgentDocument: z
     .string(zodStringParser('CPF/CNPJ'))
     .min(11, 'O CPF deve ter 11 caracteres.')
     .max(14, 'O CNPJ deve ter 14 caracteres.'),
-  responsible_name: z.string(zodStringParser('nome do responsável')),
-  responsible_email: z
+  responsibleName: z.string(zodStringParser('nome do responsável')),
+  responsibleEmail: z
     .string(zodStringParser('e-mail do responsável'))
     .email('O e-mail do responsável informado é inválido.'),
-  responsible_phone: z
+  responsiblePhone: z
     .string(zodStringParser('telefone do responsável'))
     .min(1, 'O telefone é obrigatório.'),
-  responsible_document: z
+  responsibleDocument: z
     .string(zodStringParser('CPF do responsável'))
     .transform((cpf) => cpf.replace(/\D/g, '')),
-  signature_date: z.string(zodStringParser('data de assinatura')),
-  activation_date: z.string(zodStringParser('data de ativação')),
-  expiration_date: z.string(zodStringParser('data de expiração')).optional(),
+  signatureDate: z.string(zodStringParser('data de assinatura')),
+  activationDate: z.string(zodStringParser('data de ativação')),
+  expirationDate: z.string(zodStringParser('data de expiração')).optional(),
 })
 
 export async function createOptIn(
@@ -36,16 +37,16 @@ export async function createOptIn(
   reply: FastifyReply,
 ) {
   const {
-    company_name: companyName,
-    company_document: companyDocument,
-    financial_agent_document: financialAgentDocument,
-    responsible_name: responsibleName,
-    responsible_email: responsibleEmail,
-    responsible_phone: responsiblePhone,
-    responsible_document: responsibleDocument,
-    signature_date: signatureDate,
-    activation_date: activationDate,
-    expiration_date: expirationDate,
+    companyName,
+    companyDocument,
+    financialAgentDocument,
+    responsibleName,
+    responsibleEmail,
+    responsiblePhone,
+    responsibleDocument,
+    signatureDate,
+    activationDate,
+    expirationDate,
   } = bodySchema.parse(request.body)
 
   const today = new Date()
@@ -93,7 +94,7 @@ export async function createOptIn(
     ? activationDate
     : today
 
-  await createOptInUseCase.execute({
+  const { optIn } = await createOptInUseCase.execute({
     companyName,
     companyDocument,
     financialAgentDocument,
@@ -106,5 +107,7 @@ export async function createOptIn(
     expirationDate,
   })
 
-  return reply.status(201).send()
+  return reply.status(201).send({
+    optIn: optIn ? OptInViewModel.toHTTP(optIn) : undefined,
+  })
 }

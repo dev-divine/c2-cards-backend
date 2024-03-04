@@ -4,25 +4,26 @@ import { z } from 'zod'
 import { zodStringParser } from '@core/utils/custom-zod-error'
 
 import { makeCreateOptOutUseCase } from '@modules/opt/use-cases/factories/make-create-opt-out'
+import { OptOutViewModel } from '@modules/opt/http/view-models/opt-out-view-model'
 
 const bodySchema = z.object({
-  company_name: z.string(zodStringParser('nome da empresa')),
-  company_document: z
+  companyName: z.string(zodStringParser('nome da empresa')),
+  companyDocument: z
     .string(zodStringParser('CPF/CNPJ'))
     .min(11, 'O CPF deve ter 11 caracteres.')
     .max(14, 'O CNPJ deve ter 14 caracteres.'),
-  responsible_name: z.string(zodStringParser('nome do responsável')),
-  responsible_email: z
+  responsibleName: z.string(zodStringParser('nome do responsável')),
+  responsibleEmail: z
     .string(zodStringParser('e-mail do responsável'))
     .email('O e-mail do responsável informado é inválido.'),
-  responsible_phone: z
+  responsiblePhone: z
     .string(zodStringParser('telefone do responsável'))
     .min(1, 'O telefone é obrigatório.'),
-  responsible_document: z
+  responsibleDocument: z
     .string(zodStringParser('CPF do responsável'))
     .transform((cpf) => cpf.replace(/\D/g, '')),
-  external_code: z.string(zodStringParser('código externo')),
-  b3_protocol: z.string(zodStringParser('protocolo B3')),
+  externalCode: z.string(zodStringParser('código externo')),
+  b3Protocol: z.string(zodStringParser('protocolo B3')),
 })
 
 export async function createOptOut(
@@ -30,19 +31,19 @@ export async function createOptOut(
   reply: FastifyReply,
 ) {
   const {
-    company_name: companyName,
-    company_document: companyDocument,
-    responsible_name: responsibleName,
-    responsible_email: responsibleEmail,
-    responsible_phone: responsiblePhone,
-    responsible_document: responsibleDocument,
-    external_code: externalCode,
-    b3_protocol: b3Protocol,
+    companyName,
+    companyDocument,
+    responsibleName,
+    responsibleEmail,
+    responsiblePhone,
+    responsibleDocument,
+    externalCode,
+    b3Protocol,
   } = bodySchema.parse(request.body)
 
   const createOptOutUseCase = makeCreateOptOutUseCase()
 
-  await createOptOutUseCase.execute({
+  const { optOut } = await createOptOutUseCase.execute({
     companyName,
     companyDocument,
     responsibleName,
@@ -53,5 +54,7 @@ export async function createOptOut(
     b3Protocol,
   })
 
-  return reply.status(201).send()
+  return reply.status(201).send({
+    optOut: optOut ? OptOutViewModel.toHTTP(optOut) : undefined,
+  })
 }

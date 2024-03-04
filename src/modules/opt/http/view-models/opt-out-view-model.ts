@@ -4,22 +4,18 @@ export class OptOutViewModel {
   static toHTTP(optOut: OptOut) {
     return {
       id: optOut.id,
-      ec_client_name: optOut.ecClientName,
-      ec_client_document: optOut.ecClientDocument,
-      external_code: optOut.externalCode,
-      c2cards_document: optOut.c2cardsDocument,
-      responsible_name: optOut.responsibleName,
-      responsible_document: optOut.responsibleDocument,
-      responsible_email: optOut.responsibleEmail,
-      responsible_whatsapp: optOut.responsibleWhatsapp,
+      externalCode: optOut.externalCode,
+      ecClientName: optOut.ecClientName,
+      ecClientDocument: optOut.ecClientDocument,
+      c2CardsDocument: optOut.c2cardsDocument,
+      responsibleName: optOut.responsibleName,
+      responsibleDocument: optOut.responsibleDocument,
+      responsibleEmail: optOut.responsibleEmail,
+      responsibleWhatsapp: optOut.responsibleWhatsapp,
       protocol: optOut.protocol,
-      processing_protocol: optOut.processingProtocol,
-      processing_date_time: optOut.processingDateTime
-        ? optOut.processingDateTime.toISOString()
-        : undefined,
-      created_at: optOut.createdAt.toISOString(),
-      updated_at: optOut.updatedAt.toISOString(),
-      deleted_at: optOut.deletedAt ? optOut.deletedAt.toISOString() : undefined,
+      createdAt: optOut.createdAt,
+      updatedAt: optOut.updatedAt,
+      deletedAt: optOut.deletedAt ?? undefined,
     }
   }
 }
