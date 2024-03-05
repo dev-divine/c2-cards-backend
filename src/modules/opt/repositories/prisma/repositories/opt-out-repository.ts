@@ -29,7 +29,7 @@ export class PrismaOptOutRepository implements OptOutRepository {
       take: perPage,
       where: whereCondition,
       orderBy: {
-        updated_at: 'desc',
+        updatedAt: 'desc',
       },
     })
 

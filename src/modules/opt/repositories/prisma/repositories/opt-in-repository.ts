@@ -34,19 +34,19 @@ export class PrismaOptInRepository implements OptInRepository {
       where: {
         AND: [
           {
-            activation_date: {
-              gte: startDate,
+            activationDate: {
+              gte: startDate, // Garanta que startDate esteja no formato ISO string
             },
           },
           {
-            expiration_date: {
-              lte: endDate,
+            expirationDate: {
+              lte: endDate, // Garanta que endDate esteja no formato ISO string
             },
           },
         ],
       },
       orderBy: {
-        updated_at: 'desc',
+        updatedAt: 'desc',
       },
     })
 

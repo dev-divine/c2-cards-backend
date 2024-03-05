@@ -15,7 +15,7 @@ export const querySchema = z.object({
     .optional()
     .default(1),
 
-  per_page: z.coerce
+  perPage: z.coerce
     .number(zodNumberParser('quantidade por página'))
     .int({
       message: 'O campo quantidade por página deve ser um número inteiro.',
@@ -28,17 +28,12 @@ export const querySchema = z.object({
     })
     .optional()
     .default(20),
-  start_date: z.coerce.date(zodDateParser('data de início')).optional(),
-  end_date: z.coerce.date(zodDateParser('data de fim')).optional(),
+  startDate: z.string(zodDateParser('data de início')).optional(),
+  endDate: z.string(zodDateParser('data de fim')).optional(),
 })
 
 export async function listOptIns(request: FastifyRequest, reply: FastifyReply) {
-  const {
-    page,
-    per_page: perPage,
-    start_date: startDate,
-    end_date: endDate,
-  } = querySchema.parse(request.query)
+  const { page, perPage, startDate, endDate } = querySchema.parse(request.query)
 
   const listOptInsUseCase = makeListOptInsUseCase()
 
@@ -50,8 +45,8 @@ export async function listOptIns(request: FastifyRequest, reply: FastifyReply) {
   })
 
   return reply.status(200).send({
-    opt_ins: optIns?.map((optIn) => OptInViewModel.toHTTP(optIn)) ?? [],
-    total_pages: totalPages,
-    total_opt_ins: totalOptIns,
+    optIns: optIns?.map((optIn) => OptInViewModel.toHTTP(optIn)) ?? [],
+    totalPages,
+    totalOptIns,
   })
 }

@@ -15,7 +15,7 @@ export const querySchema = z.object({
     .optional()
     .default(1),
 
-  per_page: z.coerce
+  perPage: z.coerce
     .number(zodNumberParser('quantidade por página'))
     .int({
       message: 'O campo quantidade por página deve ser um número inteiro.',
@@ -35,7 +35,7 @@ export async function listOptOuts(
   request: FastifyRequest,
   reply: FastifyReply,
 ) {
-  const { page, per_page: perPage, id } = querySchema.parse(request.query)
+  const { page, perPage, id } = querySchema.parse(request.query)
 
   const listOptOutsUseCase = makeListOptOutsUseCase()
 
@@ -46,6 +46,6 @@ export async function listOptOuts(
   })
 
   return reply.status(200).send({
-    opt_outs: optOuts?.map((optOut) => OptOutViewModel.toHTTP(optOut)) ?? [],
+    optOuts: optOuts?.map((optOut) => OptOutViewModel.toHTTP(optOut)) ?? [],
   })
 }

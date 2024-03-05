@@ -2,12 +2,11 @@ import { PrismaClient } from '@prisma/client'
 
 import { EcClientRepository } from '@modules/ec-client/repositories/ec-client-repository'
 
-import { AppError } from '@core/domain/errors/app-error'
-import { prisma } from '@infra/database/prisma'
+import { FilterDTO } from '@modules/opt/dtos/filter-dto'
 import { EcClient } from '@modules/ec-client/entities/ec-client'
 import { PrismaECClientMapper } from '@modules/ec-client/repositories/prisma/mappers/prisma-ec-client-mapper'
-import { FilterDTO } from '@modules/opt/dtos/filter-dto'
-import { PrismaClientKnownRequestError } from '@prisma/client/runtime/library'
+
+import { prisma } from '@infra/database/prisma'
 
 export class PrismaECClientRepository implements EcClientRepository {
   private repository: PrismaClient
@@ -137,25 +136,12 @@ export class PrismaECClientRepository implements EcClientRepository {
   }
 
   async remove(id: string): Promise<boolean> {
-    try {
-      await this.repository.ecClient.delete({
-        where: {
-          id,
-        },
-      })
+    await this.repository.ecClient.delete({
+      where: {
+        id,
+      },
+    })
 
-      return true
-    } catch (error: unknown) {
-      if (error instanceof PrismaClientKnownRequestError) {
-        if (error.code === 'P2025') {
-          throw new AppError({
-            code: 'prisma.user_not_found',
-          })
-        }
-      }
-      throw new AppError({
-        code: 'internal',
-      })
-    }
+    return true
   }
 }

@@ -4,10 +4,8 @@ import { User } from '@modules/user/entities/user'
 import { PrismaUserMapper } from '@modules/user/repositories/prisma/mappers/prisma-user-mapper'
 import { UserRepository } from '@modules/user/repositories/user-repository'
 
-import { AppError } from '@core/domain/errors/app-error'
 import { prisma } from '@infra/database/prisma'
 import { PaginationDTO } from '@modules/user/dtos/pagination-dto'
-import { PrismaClientKnownRequestError } from '@prisma/client/runtime/library'
 
 export class PrismaUserRepository implements UserRepository {
   private repository: PrismaClient
@@ -137,25 +135,12 @@ export class PrismaUserRepository implements UserRepository {
   }
 
   async remove(userId: string): Promise<boolean> {
-    try {
-      await this.repository.ecClient.delete({
-        where: {
-          id: userId,
-        },
-      })
+    await this.repository.ecClient.delete({
+      where: {
+        id: userId,
+      },
+    })
 
-      return true
-    } catch (error: unknown) {
-      if (error instanceof PrismaClientKnownRequestError) {
-        if (error.code === 'P2025') {
-          throw new AppError({
-            code: 'prisma.user_not_found',
-          })
-        }
-      }
-      throw new AppError({
-        code: 'internal',
-      })
-    }
+    return true
   }
 }

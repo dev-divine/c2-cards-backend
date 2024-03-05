@@ -4,8 +4,8 @@ import { OptInRepository } from '@modules/opt/repositories/opt-in-repository'
 interface Input {
   page: number
   perPage: number
-  startDate?: Date
-  endDate?: Date
+  startDate?: string
+  endDate?: string
 }
 
 interface Output {
