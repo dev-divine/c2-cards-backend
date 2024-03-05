@@ -113,12 +113,6 @@ export const errors = {
     status: StatusCode.BAD_REQUEST,
   },
 
-  'prisma.user_not_found': {
-    error: 'User not found - P2025',
-    message: 'Erro ao buscar o usuário em nossa base de dados.',
-    status: StatusCode.BAD_REQUEST,
-  },
-
   'ec_client.ec_client_not_found': {
     error: 'EcClient not found!',
     message:

@@ -35,12 +35,12 @@ export class PrismaOptInRepository implements OptInRepository {
         AND: [
           {
             activationDate: {
-              gte: startDate, // Garanta que startDate esteja no formato ISO string
+              gte: startDate,
             },
           },
           {
             expirationDate: {
-              lte: endDate, // Garanta que endDate esteja no formato ISO string
+              lte: endDate,
             },
           },
         ],
